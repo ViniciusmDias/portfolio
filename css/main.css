@@ -1,4 +1,4 @@
-.portifolio {
+.home {
     background-color: #141618;
     min-height: 600px;
     height: 100vh;
@@ -17,4 +17,44 @@
     letter-spacing: 2px;
     padding: 10px 20px;
     font-family: 'Neuzeit Grotesk Bold', sans-serif
+}
+.skills {
+    text-align: center;
+}
+.img-home {
+    border-radius: 50%;
+    margin: 30px 0 10px;
+    max-width: 80%;
+    height: auto;
+    width: 250px;
+}
+.projects {
+    background-color: white;
+    min-height: 600px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.projects-title {
+    text-align: center;
+}
+.projects h2 {
+    color: rgba(0, 0, 0, .1);
+    text-align: center;
+    margin: 90px 0 30px;
+    font-size: 40px;
+}
+.projects a {
+    border-bottom: 2px solid rgba(0, 0, 0, .4);
+    color: #3b3b3b;
+    text-decoration: none;
+    transition: border .3s ease-in-out;
+}
+.projects .container {
+    position: absolute;
+    top: 80px;
 }
