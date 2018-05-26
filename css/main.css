@@ -1,13 +1,19 @@
-.home {
-    background-color: #141618;
-    min-height: 600px;
-    height: 100vh;
-    width: 100%;
+.navbar {
+    background-color: rebeccapurple;
+    top: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
+    color: white;
+    font-weight: 300;
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 12px;
+    position: fixed;
+    min-height: 59px;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 4;
+    transition: background-color .3s ease;
+    will-change: transform;
 }
 .logo {
     color: white;
@@ -18,7 +24,62 @@
     padding: 10px 20px;
     font-family: 'Neuzeit Grotesk Bold', sans-serif
 }
-.container {
+.site-nav {
+    margin: 0 auto;
+    background: transparent;
+    text-align: center;
+    transition: background-color .3s ease;
+}
+.site-nav a {
+    color: #E2E6E7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    padding: 14px 11px;
+}
+.site-nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+}
+.nav-social {
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    margin-left: auto;
+}
+.fab {
+    font-size: 40px;
+}
+.home {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #141618;
+    background-image: url(../img/apple-code-coding-574069.jpg);
+    min-height: 600px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.home::before {
+    content: '';
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, .8) 0, transparent 50%, transparent 90%, rgba(0, 0, 0, .8));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    will-change: transform;
 }
 .skills {
     color: #fff;
@@ -44,7 +105,7 @@
     min-height: 600px;
     height: 100vh;
     width: 100%;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -65,12 +126,12 @@
     text-decoration: none;
     transition: border .3s ease-in-out;
 }
-.contact {
-    background-color: purple;
+.contact {  
+    background-color: white;
     min-height: 600px;
     height: 100vh;
     width: 100%;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -90,6 +151,14 @@
     font-family: fantasy;
     margin-bottom: 5px;
 }
-.contact-buttons {
-    display: grid;
+.contact-buttons a {
+    width: fit-content;
+    display: grid;  
+    height: 36px;
+    margin: 0 auto
+}
+@media (min-width: 768px) {
+    .contact-buttons {
+        margin-top: 100px;
+    }
 }

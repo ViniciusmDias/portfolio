@@ -7,21 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar fixed-top navbar-light">
-            <a class="logo" role="button" href="#">VDias</a>
-            <div class="nav-buttons">
-                <a class="btn btn-outline-success" role="button" href="http://www.google.com">Portfolio</a>
-                <a class="btn btn-outline-warning" role="button" href="http://www.google.com">PensandoAinda</a>
+    <header class="navbar fixed-top navbar-light">
+            <a class="logo" href="#">VDias</a>
+            <nav class="site-nav">
+                <ul>
+                <li ><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-social">
+                <a href="https://github.com/viniciusmdias" title="GitHub"><i class="fab fa-github"></i>
+                </a>
             </div>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </nav>
     </header>
     <main>
     <section class="home">
@@ -31,16 +32,16 @@
                 <hr class="star-bright">
             </div>
             <div class="social-media mx-auto d-block">
-                <a class="btn btn-outline-success" href="http://www.google.com">Facebook</a>
-                <a class="btn btn-outline-warning" href="http://www.google.com">Instagram</a>    
-                <a class="btn btn-outline-warning" href="http://www.google.com">Github</a>    
-                <a class="btn btn-outline-warning" href="http://www.google.com">LinkedIn</a>    
+                <a class="btn btn-outline-success" href="https://www.freecodecamp.org/viniciusmdias">FreeCodeCamp</a>
+                <a class="btn btn-outline-warning" href="https://www.instagram.com/diasvini10/">Instagram</a>    
+                <a class="btn btn-outline-warning" href="https://github.com/ViniciusmDias">Github</a>    
+                <a class="btn btn-outline-warning" href="https://www.linkedin.com/in/vinicius-m-dias/">LinkedIn</a>    
             </div>
         </div>
     </section>
     <section class="projects">
         <div class="container">
-            <h1 class="projects-title">Projects</h1>
+            <h1 class="projects-title" id="projects">Projects</h1>
             <hr class="star-dark">
             <h2>2018</h2>
             <ul>
@@ -56,7 +57,7 @@
     </section>
     <section class="contact">
         <div class="container">
-            <h1 class="contact-title">Contact</h1>
+            <h1 class="contact-title" id="contact">Contact</h1>
             <hr class="star-dark">
             <div class="row">
                 <div class="col-md-8 contact-text">
@@ -64,11 +65,11 @@
                     <p>vinicius-mdias@hotmail.com</p>
                     <img src="img/eu.jpg" alt="myPhoto" class="mx-auto d-block img-home">
                 </div>
-                <div class="col-md-4 contact-buttons">
-                    <a class="btn btn-outline-success" href="http://www.google.com">Facebook</a>
-                    <a class="btn btn-outline-warning" href="http://www.google.com">Instagram</a>    
-                    <a class="btn btn-outline-warning" href="http://www.google.com">Github</a>    
-                    <a class="btn btn-outline-warning" href="http://www.google.com">LinkedIn</a>    
+                <div class="col-md-4 mx-auto contact-buttons">
+                    <a class="btn btn-outline-success" href="https://www.freecodecamp.org/viniciusmdias">FreeCodeCamp</a>
+                    <a class="btn btn-outline-warning" href="https://www.instagram.com/diasvini10/">Instagram</a>    
+                    <a class="btn btn-outline-warning" href="https://github.com/ViniciusmDias">Github</a>    
+                    <a class="btn btn-outline-warning" href="https://www.linkedin.com/in/vinicius-m-dias/">LinkedIn</a>
                 </div>
             </div>
         </div>
