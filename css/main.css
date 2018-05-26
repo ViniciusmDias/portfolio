@@ -99,6 +99,8 @@
 .social-media {
     text-align: center;
     margin-top: 75px;
+    position: relative;
+    z-index: 5000;
 }
 .projects {
     background-color: white;
