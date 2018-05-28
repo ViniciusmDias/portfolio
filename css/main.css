@@ -57,7 +57,16 @@
     margin-left: auto;
 }
 header .fab {
+    display: none;
     font-size: 40px;
+}
+.btn:hover {
+    color: white !important;
+}
+@media (min-width: 496px) {
+    header .fab {
+        display: block;
+    }
 }
 .fab {
     font-size: 18px;
@@ -194,7 +203,6 @@ header .fab {
 }
 .contact-text {
     text-align: center;
-    float: left;
 }
 .contact p {
     font-size: 2em;

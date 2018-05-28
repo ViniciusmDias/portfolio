@@ -8,17 +8,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <script src="js/bootstrap.js"></script>
 </head>
 <body>
     <header class="navbar fixed-top navbar-light">
             <a class="logo" href="#">ViniDias</a>
             <nav class="site-nav">
-                <ul>
-                <li ><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#jobs">Jobs</a></li>
+                <ul id="fix">
+                    <li><a id="" href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#jobs">Jobs</a></li>
                 </ul>
             </nav>
             <div class="nav-social">
@@ -35,10 +34,10 @@
                 <hr class="star-bright">
             </div>
             <div class="social-media mx-auto d-block">
-                <a class="btn btn-success" href="https://www.freecodecamp.org/viniciusmdias"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</a>
-                <a class="btn btn-warning" href="https://www.instagram.com/diasvini10/"><i class="fab fa-instagram"></i> Instagram</a>    
-                <a class="btn btn-warning" href="https://github.com/ViniciusmDias"><i class="fab fa-github"></i> Github</a>    
-                <a class="btn btn-warning" href="https://www.linkedin.com/in/vinicius-m-dias/"><i class="fab fa-linkedin"></i> LinkedIn</a>    
+                <a class="btn btn-outline-success" href="https://www.freecodecamp.org/viniciusmdias">FreeCodeCamp</a>
+                <a class="btn btn-outline-warning" href="https://github.com/ViniciusmDias">Github</a>    
+                <a class="btn btn-outline-warning" href="https://www.linkedin.com/in/vinicius-m-dias/">LinkedIn</a>
+                <a class="btn btn-outline-warning" href="https://www.instagram.com/diasvini10/">Instagram</a>    
             </div>
         </div>
     </section>
@@ -100,20 +99,21 @@
         <div class="container">
             <h1 class="contact-title" id="contact">Contact</h1>
             <hr class="star-dark">
-            <div class="row">
-                <div class="col-md-8 contact-text">
+                <div class="contact-text">
                     <p>Connect with Vinicius Dias:</p>
                     <p>vinicius-mdias@hotmail.com</p>
                     <img src="img/eu.jpg" alt="myPhoto" class="mx-auto d-block img-home">
                 </div>
-                <div class="col-md-4 mx-auto contact-buttons">
-                    <a class="btn btn-outline-success" href="https://www.freecodecamp.org/viniciusmdias">FreeCodeCamp</a>
-                    <a class="btn btn-outline-warning" href="https://www.instagram.com/diasvini10/">Instagram</a>    
-                    <a class="btn btn-outline-warning" href="https://github.com/ViniciusmDias">Github</a>    
-                    <a class="btn btn-outline-warning" href="https://www.linkedin.com/in/vinicius-m-dias/">LinkedIn</a>
+                <div class="social-media mx-auto d-block">
+                    <a class="btn btn-success" href="https://www.freecodecamp.org/viniciusmdias"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</a>
+                    <a class="btn btn-warning" href="https://github.com/ViniciusmDias"><i class="fab fa-github"></i> Github</a>    
+                    <a class="btn btn-warning" href="https://www.linkedin.com/in/vinicius-m-dias/"><i class="fab fa-linkedin"></i> LinkedIn</a>    
+                    <a class="btn btn-warning" href="https://www.instagram.com/diasvini10/">Instagram</a>    
                 </div>
-            </div>
         </div>
     </section>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
