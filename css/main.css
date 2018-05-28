@@ -18,9 +18,9 @@
 .logo {
     color: white;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 16px;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: -2px;
     padding: 10px 20px;
     font-family: 'Neuzeit Grotesk Bold', sans-serif
 }
@@ -40,6 +40,10 @@
     font-size: 12px;
     padding: 14px 11px;
 }
+.site-nav a:hover {
+    color: white;
+    text-decoration: none;
+}
 .site-nav > ul {
     margin: 0;
     padding: 0;
@@ -52,8 +56,11 @@
     padding-right: 12px;
     margin-left: auto;
 }
-.fab {
+header .fab {
     font-size: 40px;
+}
+.fab {
+    font-size: 18px;
 }
 .home {
     background-repeat: no-repeat;
@@ -81,11 +88,12 @@
     z-index: 2;
     will-change: transform;
 }
-.skills {
+.intro-description {
     color: #fff;
+    font-size: 220%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
     margin: 10px auto 0;
-    font-size: 60px;
-    line-height: 80px;
     text-align: center;
     font-family: 'Poppins Bold', sans-serif;
 }
@@ -100,7 +108,7 @@
     text-align: center;
     margin-top: 75px;
     position: relative;
-    z-index: 5000;
+    z-index: 2;
 }
 .projects {
     background-color: white;
@@ -127,6 +135,46 @@
     color: #3b3b3b;
     text-decoration: none;
     transition: border .3s ease-in-out;
+}
+.skills {
+    background-color: white;
+    min-height: 600px;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.skills-title {
+    text-align: center;
+}
+.skills h2 {
+    color: rgba(0, 0, 0, .1);
+    text-align: center;
+    margin: 0px 0 30px;
+    font-size: 40px;
+}
+.jobs {
+    background-color: white;
+    min-height: 600px;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.jobs-title {
+    text-align: center;
+}
+.jobs h2 {
+    color: rgba(0, 0, 0, .1);
+    text-align: center;
+    margin: 80px 0 30px;
+    font-size: 40px;
 }
 .contact {  
     background-color: white;
