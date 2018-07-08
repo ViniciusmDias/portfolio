@@ -1,24 +1,30 @@
-function scroll (selector) {
+/* this event is change to css propierty -> scroll-behavior. */
 
-    $(selector).click(function (event) {
+// var scroll = function (selector) {
+
+//     $(selector).click(function (event) {
 
 
-        console.log("fui clicado");
+//         console.log("fui clicado");
         
-        event.preventDefault();
-        var target = $(this).attr('href');
+//         event.preventDefault();
+//         var target = $(this).attr('href');
 
-        $('html, body').animate ({
-            scrollTop: $(target).offset().top
+//         $('html, body').animate ({
+//             scrollTop: $(target).offset().top
 
-        }, 1000)
-    });
+//         }, 1000)
+//     });
 
-}
+// }
+$(document).scroll(function() {
+    
+    $("header").addClass('navbarMove').fadeIn();
+    if($(this).scrollTop() == 0) {
+        $("header").removeClass('navbarMove');
+    }
 
-scroll('a[href*=projects]');
-scroll('a[href*=skills]');
-scroll('a[href*=jobs]');
-scroll('a[href*=contact]');
-scroll('a[href*=main]');
+
+});
+
 

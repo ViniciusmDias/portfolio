@@ -1,9 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     background-color: rebeccapurple;
     top: 0;
     display: flex;
     align-items: center;
     color: white;
+    height: 80px;
     font-weight: 300;
     font-family: 'Poppins Light', sans-serif;
     font-size: 12px;
@@ -15,6 +20,10 @@
     transition: background-color .3s ease;
     will-change: transform;
     padding: 10px 20px;
+}
+.navbarMove {
+    height: 50px;
+    
 }
 .logo {
     color: white;
