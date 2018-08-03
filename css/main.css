@@ -50,8 +50,10 @@ html {
     text-decoration: none;
     letter-spacing: -2px;
     padding: 10px 20px;
-    font-family: 'Neuzeit Grotesk Bold', sans-serif
+    font-family: 'Neuzeit Grotesk Bold', sans-serif;
+    border: none !important;
 }
+
 @media (min-width: 400px) {
     .logo {
         display: block; 
