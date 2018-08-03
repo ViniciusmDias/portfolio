@@ -8,3 +8,6 @@
     justify-content: center;
     text-align: center;
 }
+.container li {
+    display: block;
+}
