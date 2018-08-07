@@ -1,0 +1,17 @@
+.navbar {
+    background-color:#1c1d21;    
+}
+.container.ufsc {
+    padding-top: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.container.ufsc .discipline {
+    text-align: left;
+}
+.ufsc-title {
+    padding-top: 1.2em;
+    color: #035455;
+}

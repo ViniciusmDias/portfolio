@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ufsc.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ine5613.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body id="main">
@@ -29,24 +29,39 @@
             </div>
     </header>
     <div class="container ufsc">
-        <h2>UFSC -2018 / 4º fase</h2>
-        <div class="container">
-            <p>Pretendo colocar aqui um pouco sobre cada matéria que eu estou fazendo nessa fase,
-            <br>
-            esse material servirá de auxílio para meus estudos e para quem possa ajudar.
-            </p>
-        </div>
-        <section class="class">
-            <h2 class="class-title">Disciplinas</h1>
+        <h1>Banco de Dados</h1>
+        <section class="discipline">
+            <h1 class="ufsc-title">Aulas 1 e 2</h1>
             <hr class="star-dark">
-            <ul>
-                <li><a href="working.html">INE5611 - Sistemas Operacionais</a></li>
-                <li><a href="working.html">INE5612 - Desenvolvimento de Sistemas Orientados a Objetos II</a></li>
-                <li><a href="ine5613.html">INE5613 - Banco de Dados I</a></li>
-                <li><a href="working.html">INE5659 - GETICS</a></li>
-                <li><a href="working.html">INE5608 - Análise e Projeto de Sistemas</a></li>
-            </ul> 
-        </section>
+            <h1>SGBD</h2>
+            
+            <p>As 5 funções básicas de um SGBD. <br>
+                <br>1. Métodos de acesso
+                <br>2. Integridade Semântica
+                <br>3. Segurança
+                <br>4. Concorrência
+                <br>5. Independência
+            </p>
+            <h2>Métodos de Acesso</h1>
+            <p>-DDL: é o esquema do banco de dados(seus dados e os tipos)
+            <br>-DML: é como esses dados são manipulados. Tem que ter no minímo as 4 operações básicas.
+            (Insert, Delete, Select, Update)
+            <br>-Processamento eficaz de consultas. Não travar, processar e filtrar plano de acesso
+            para fazer a consulta o mais rápido possível.
+
+            Sempre reduzir o número de dados o quanto antes nas consultas.
+            (resposta do slide "Alternativas de Processamento" é verde.)
+            <h2>Integridade Semântica</h2>
+            <p>Garantir que os dados respeitem os padrões pedidos e limitar os conteúdos possiveis.</p>
+            </p>
+            <h2>Segurança</h2>
+            <p>-Evitar a violação de segurança.
+            <br>-Privilégios de usuários, evitar que quem não tem permissão não faça algumas coisas
+            (Matrizes de Autorização).
+            <br>-Segurança contra falhas (Recovery).
+            </p>
+        </section> 
+    </div>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
