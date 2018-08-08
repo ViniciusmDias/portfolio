@@ -48,17 +48,25 @@
             (Insert, Delete, Select, Update)
             <br>-Processamento eficaz de consultas. Não travar, processar e filtrar plano de acesso
             para fazer a consulta o mais rápido possível.
-
             Sempre reduzir o número de dados o quanto antes nas consultas.
             (resposta do slide "Alternativas de Processamento" é verde.)
             <h2>Integridade Semântica</h2>
             <p>Garantir que os dados respeitem os padrões pedidos e limitar os conteúdos possiveis.</p>
             </p>
             <h2>Segurança</h2>
-            <p>-Evitar a violação de segurança.
+            <p>-Evitar a violação de consistência de dados.
             <br>-Privilégios de usuários, evitar que quem não tem permissão não faça algumas coisas
             (Matrizes de Autorização).
             <br>-Segurança contra falhas (Recovery).
+            </p>
+            <h2>Concorrência</h2>
+            <p>-Evitar conflitos de acesso simultâneo a dados por transações. (Scheduler)
+            <br>-Principais estratégias. (bloqueio: lock e timestamp)
+            <h2>Independência</h2>
+            <p>-Transparência da organização de dados
+            <br>-Independência fisíca e lógica.
+            </p>
+
             </p>
         </section> 
     </div>

@@ -18,8 +18,16 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 html {
     scroll-behavior: smooth;
+}
+#particles-js .particles-js-canvas-el {
+    position: fixed;
+    background-color: #485564;
+}
+h1, li, a, ul {
+    color: #fff !important;
 }
 .navbar {
     top: 0;
@@ -40,7 +48,7 @@ html {
     padding: 10px 20px;
 }
 .navbarMove {
-    background-color: #1c1d21;
+    background-color: #485564;
 }
 .logo {
     display: none;
@@ -95,7 +103,7 @@ html {
     align-items: center;
     padding: 0 20px 0 20px;
 }
-header .fab {
+nav .fab {
     display: none;
     font-size: 30px;
     color: white;
@@ -104,19 +112,14 @@ header .fab {
     color: white !important;
 }
 @media (min-width: 500px) {
-    header .fab {
+    nav .fab {
         display: block;
     }
 }
 .fab {
     font-size: 18px;
 }
-#welcome-section {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #141618;
-    background-image: url(../img/apple-code-coding-574069.jpg);
+.welcome-section {
     min-height: 600px;
     height: 100vh;
     width: 100%;
@@ -126,22 +129,12 @@ header .fab {
     position: relative;
     flex-direction: column;
 }
-#welcome-section::before {
-    content: '';
-    background-image: linear-gradient(180deg,rgba(0, 0, 0, .8) 0, transparent 50%, transparent 90%, rgba(0, 0, 0, .8));
+.welcome-section .container {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    will-change: transform;
 }
 .intro-description {
     color: #fff;
     font-size: 220%;
-    word-spacing: 4px;
-    letter-spacing: 1px;
     margin: 10px auto 0;
     text-align: center;
     font-family: 'Poppins Bold', sans-serif;
@@ -160,7 +153,6 @@ header .fab {
     z-index: 2;
 }
 .projects {
-    background-color: white;
     min-height: 600px;
     height: 100vh;
     width: 100%;
@@ -174,19 +166,18 @@ header .fab {
     text-align: center;
 }
 .projects h2 {
-    color: rgba(0, 0, 0, .1);
+    color: #fff;
     text-align: center;
     margin: 80px 0 30px;
     font-size: 40px;
 }
 .projects a {
     border-bottom: 2px solid rgba(0, 0, 0, .4);
-    color: #3b3b3b;
+    color: #fff;
     text-decoration: none;
     transition: border .3s ease-in-out;
 }
 .skills {
-    background-color: white;
     min-height: 600px;
     height: 100vh;
     width: 100%;
@@ -200,13 +191,12 @@ header .fab {
     text-align: center;
 }
 .skills h2 {
-    color: rgba(0, 0, 0, .1);
+    color: #fff;
     text-align: center;
     margin: 0px 0 30px;
     font-size: 40px;
 }
 .jobs {
-    background-color: white;
     min-height: 600px;
     height: 100vh;
     width: 100%;
@@ -220,43 +210,8 @@ header .fab {
     text-align: center;
 }
 .jobs h2 {
-    color: rgba(0, 0, 0, .1);
+    color: #fff;
     text-align: center;
     margin: 80px 0 30px;
     font-size: 40px;
-}
-.contact {  
-    background-color: #1c1d21;
-    min-height: 600px;
-    height: 100vh;
-    width: 100%;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-}
-.contact-title {
-    color: white;
-    text-align: center;
-}
-.contact-text {
-    color: white;
-    text-align: center;
-}
-.contact p {
-    font-size: 2em;
-    font-family: fantasy;
-    margin-bottom: 5px;
-}
-.contact-buttons a {
-    width: fit-content;
-    display: grid;  
-    height: 36px;
-    margin: 0 auto
-}
-@media (min-width: 768px) {
-    .contact-buttons {
-        margin-top: 100px;
-    }
 }

@@ -2,10 +2,8 @@
 
 $(document).scroll(function() {
     
-    $("header").addClass('navbarMove').fadeIn();
+    $("nav").addClass('navbarMove').fadeIn();
     if($(this).scrollTop() == 0) {
-        $("header").removeClass('navbarMove');
+        $("nav").removeClass('navbarMove');
     }
 });
-
-
