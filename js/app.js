@@ -2,7 +2,6 @@
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
 
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
 /*
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.js loaded - callback');
@@ -16,7 +15,7 @@ particlesJS('particles-js',
 {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 150,
       "density": {
         "enable": true,
         "value_area": 800
@@ -35,14 +34,14 @@ particlesJS('particles-js',
         "nb_sides": 5
       },
       "image": {
-        "src": "img/github.svg",
+        "src": "img/vinidias.png",
         "width": 100,
         "height": 100
       }
     },
     "opacity": {
       "value": 1,
-      "random": true,
+      "random": false,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -51,7 +50,7 @@ particlesJS('particles-js',
       }
     },
     "size": {
-      "value": 3,
+      "value": 1.5,
       "random": true,
       "anim": {
         "enable": false,
@@ -103,9 +102,9 @@ particlesJS('particles-js',
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 4,
-        "duration": 0.3,
+        "distance": 2,
+        "size": 1,
+        "duration": 1,
         "opacity": 1,
         "speed": 3
       },
