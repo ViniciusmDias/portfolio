@@ -17,7 +17,7 @@
     font-size: 40px;
 }
 .class li a {
-    color: #1c1d21;
+    color: #1c1d21 !important;
     text-transform: uppercase;
     display: inline-block;
     font-weight: 300;
