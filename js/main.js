@@ -7,3 +7,7 @@ $(document).scroll(function() {
         $("nav").removeClass('navbarMove');
     }
 });
+
+$( document ).resize(function() {
+    $( "#log" ).append( "<div>Handler for .resize() called.</div>" );
+  });
