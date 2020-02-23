@@ -1,0 +1,42 @@
+.projetos .carousel-item {
+  display: flex !important;
+}
+
+.projetos .carousel-item:focus {
+  outline: none;
+}
+
+.projetos .carousel-item .image-item {
+  max-height: 195px;
+  min-width: 46%;
+  width: auto;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.projetos .carousel-item .info-item {
+  padding: 0 20px;
+}
+
+.projetos h3 {
+  color: #3ebd93;
+}
+
+.projetos p {
+  color: #00000096;
+}
+
+.projetos h4 {
+  color: #ffe88c;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.projetos .slick-arrow::before {
+  color: #00000096;
+}
+
+.projetos .slick-dots {
+  bottom: -40px;
+}

@@ -1,0 +1,37 @@
+header {
+    height: 80px;
+    background-color: #0000001c;
+    display: flex;
+    position: fixed; 
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+    width: 100%;
+}
+header a {
+    font-size: 40px;
+    color: #fff;
+    font-family: "Rubik-Bold", sans-serif;
+}
+header ul {
+    display: flex;
+}
+header li a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    font-family: "Rubik-Regular", sans-serif;
+}
+header button {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+}
+header button p {
+    color: #fff;
+    font-size: 16px;
+}
