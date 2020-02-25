@@ -19,13 +19,13 @@
 }
 
 .layout {
-	background-color: gray;
+	background-color: #000;
 	flex: 1;
 	font-family: "Rubik-Regular", sans-serif;
 }
 
 .layout h1 {
-	font-size: 48px;
+	font-size: 56px;
 }
 
 .layout h2 {
@@ -34,7 +34,6 @@
 
 .layout h3 {
 	font-size: 32px;
-	margin-bottom: 30px;
 }
 
 .layout h4 {

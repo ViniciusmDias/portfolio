@@ -39,16 +39,13 @@ export default function Header({ siteTitle }) {
 				</Link>
 				<ul className={`menu ${moveStyle}`}>
 					<li>
-						<a href="#projetos">Projects</a>
+						<a href="#projetos">Projetos</a>
 					</li>
 					<li>
-						<a href="#experiencia">Skills</a>
+						<a href="#experiencia">Sobre</a>
 					</li>
 					<li>
-						<a href="#experiencia">Career</a>
-					</li>
-					<li>
-						<a href="#contato">Contact</a>
+						<a href="#contato">Contato</a>
 					</li>
 					<li>
 						<Link to="/blog">Blog</Link>

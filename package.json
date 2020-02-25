@@ -11,7 +11,8 @@
   "dependencies": {
     "ejs": "^2.7.1",
     "express": "^4.17.1",
-    "http-errors": "^1.7.3"
+    "http-errors": "^1.7.3",
+    "use-dencrypt-effect": "^1.0.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
