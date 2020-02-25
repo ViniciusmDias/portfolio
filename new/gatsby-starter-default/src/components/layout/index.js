@@ -48,7 +48,7 @@ export default function Layout({ children }) {
 				{children}
 			</main>
 			<footer>
-				© {new Date().getFullYear()}, Built with
+				© {new Date().getFullYear()}, Desenvolvido com
 				{` `}
 				<a href="https://www.gatsbyjs.org">Gatsby</a>
 			</footer>

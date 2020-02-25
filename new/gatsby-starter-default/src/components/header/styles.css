@@ -9,7 +9,7 @@ header {
 	justify-content: center;
 	width: 100%;
 	transition: all 0.8s ease;
-	z-index: 2;
+	z-index: 5;
 }
 
 header.header.move {

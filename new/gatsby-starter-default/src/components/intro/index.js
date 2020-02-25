@@ -2,7 +2,7 @@ import React from "react"
 import "./styles.css"
 import { useDencrypt } from "use-dencrypt-effect"
 
-const values = ["sistemas-web", "sites"]
+const values = ["sistemas-web", "sites", "aplicativos"]
 
 export default function Intro({}) {
 	const Example = () => {
@@ -27,7 +27,9 @@ export default function Intro({}) {
 		<>
 			<div className="container intro">
 				<h3>
-					Olá, eu me chamo <span>Vinicius Dias.</span>
+					Olá, eu me chamo <span>Vinicius Dias</span>
+					<br></br>
+					Sou desenvolvedor front-end, natural de Florianópolis
 				</h3>
 				<h1>
 					<span>Eu projeto e desenvolvo </span>

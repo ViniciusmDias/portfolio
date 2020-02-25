@@ -23,9 +23,11 @@
 	flex: 1;
 	font-family: "Rubik-Regular", sans-serif;
 }
-
+.layout canvas {
+	position: fixed;
+}
 .layout h1 {
-	font-size: 56px;
+	font-size: 54px;
 }
 
 .layout h2 {
@@ -37,7 +39,7 @@
 }
 
 .layout h4 {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .layout p {
@@ -50,4 +52,12 @@ a {
 
 .layout .container {
 	padding: 50px 10%;
+	z-index: 2;
+	position: relative;
+}
+footer {
+	background-color: #ffe88c;
+}
+footer a {
+	color: #3ebd93;
 }
