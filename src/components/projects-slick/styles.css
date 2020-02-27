@@ -1,0 +1,95 @@
+.projetos .slick-track {
+	height: 300px;
+}
+.projetos .slick-track .slick-slide {
+	display: flex;
+	align-items: center;
+}
+.projetos .carousel-item {
+	display: flex !important;
+	background-color: #ffe88c;
+	border-radius: 8px;
+	box-shadow: rgb(62, 189, 147) 0px 4px 4px;
+	transition: all 0.25s ease 0s;
+	height: 200px;
+	width: 96% !important;
+	box-sizing: border-box;
+	margin-left: 2%;
+	top: 0;
+	position: relative;
+}
+.projetos .carousel-item:hover {
+	top: -10px;
+	box-shadow: rgb(62, 189, 147) 0px 12px 16px;
+}
+.projetos .carousel-item .info-item {
+	padding: 10px;
+	width: 60%;
+}
+.projetos .info-item h4 {
+	display: table;
+	border-bottom: 5px solid;
+	color: #00000096;
+	padding-bottom: 4px;
+}
+
+.projetos .carousel-item:focus {
+	outline: none;
+}
+.projetos .carousel-item .show-item {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+.projetos .show-item .social {
+	display: flex;
+	justify-content: space-between;
+}
+.projetos .show-item .social h4 {
+	color: #fff;
+	padding: 10px 20px 10px 10px;
+	margin-bottom: 0;
+	clip-path: polygon(0px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+	background-color: #00000096;
+	align-self: baseline;
+}
+.projetos .icons {
+	padding: 10px;
+}
+.projetos .icons svg {
+	margin: 0 5px;
+	font-size: 24px;
+	color: #00000096;
+}
+
+.projetos h3 {
+	color: #00000096;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.projetos p {
+	color: #00000096;
+}
+
+.projetos h4 {
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.projetos .show-item h4 {
+	align-self: flex-end;
+	padding: 10px 20px 10px 20px;
+	margin-bottom: 0;
+	clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+	border-radius: 0px 0px 8px;
+	background-color: #3ebd93;
+}
+
+.projetos .slick-arrow::before {
+	color: #fff;
+}
+
+.projetos .slick-dots {
+	bottom: -40px;
+}

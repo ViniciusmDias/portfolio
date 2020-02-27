@@ -1,0 +1,25 @@
+.layout .container.sobre {
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffe88c;
+	padding: 150px 10%;
+}
+.sobre .title {
+	width: 51%;
+}
+.sobre .title h4 {
+	font-weight: 700;
+	color: #3ebd93;
+}
+.sobre .title h2 {
+	font-size: 64px;
+	color: #fff;
+}
+.sobre .description {
+	width: 46%;
+	align-self: center;
+}
+.sobre .description p {
+	color: #222c3599;
+	line-height: 1.5;
+}
