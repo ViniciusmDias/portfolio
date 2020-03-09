@@ -6,7 +6,7 @@ export default function Sobre() {
 		<div className="container sobre">
 			<div className="title">
 				<h4>Sobre Mim</h4>
-				<h2>Apaixonado por construir produtos incríveis.</h2>
+				<h2>Apaixonado por idéias incríveis.</h2>
 			</div>
 			<div className="description">
 				<p>

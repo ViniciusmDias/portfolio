@@ -17,33 +17,33 @@
 	font-family: "Rubik-Bold";
 	src: url("../../fonts/Rubik-Bold.ttf");
 }
-
-.layout {
-	background-color: #000;
-	flex: 1;
+html {
+	font-size: 20px;
 	font-family: "Rubik-Regular", sans-serif;
+}
+.layout {
+	background-color: #be4242;
+	flex: 1;
 }
 .layout canvas {
 	position: fixed;
 }
 .layout h1 {
-	font-size: 54px;
+	font-size: 1.6rem;
+	font-weight: lighter;
+	letter-spacing: -1.5px;
 }
 
 .layout h2 {
-	font-size: 40px;
-}
-
-.layout h3 {
-	font-size: 32px;
-}
-
-.layout h4 {
-	font-size: 20px;
+	font-size: 1.1rem;
+	font-weight: lighter;
+	letter-spacing: -0.5px;
 }
 
 .layout p {
-	font-size: 16px;
+	font-size: 1rem;
+	font-weight: normal;
+	letter-spacing: 0.5px;
 }
 
 a {
@@ -52,7 +52,6 @@ a {
 
 .layout .container {
 	padding: 50px 10%;
-	z-index: 2;
 	position: relative;
 }
 footer {

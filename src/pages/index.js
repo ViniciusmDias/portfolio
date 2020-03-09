@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo/"
+import Header from "../components/header"
 
 import Intro from "../components/intro"
 import Sobre from "../components/sobre"
@@ -11,7 +12,9 @@ import Contact from "../components/contact"
 const IndexPage = () => (
 	<Layout>
 		<SEO title="Home" />
-		<Intro title="Intro"></Intro>
+		<Header />
+
+		<Intro></Intro>
 		<Sobre />
 		<Projetos />
 		<Contact />
