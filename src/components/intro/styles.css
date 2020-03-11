@@ -4,7 +4,7 @@
 	animation: 600ms ease 600ms 1 normal forwards running intro;
 	display: flex;
 	flex-direction: column;
-	max-width: 30ch;
+	max-width: 32ch;
 	opacity: 0;
 	height: 100vh;
 	margin-top: 110px;
@@ -45,7 +45,7 @@
 	line-height: 1;
 	padding: 16px 32px;
 	background-color: #fff;
-	color: #be4242;
+	color: #1b85a8;
 	border-radius: 10px;
 	transition: transform 0.5s ease;
 }

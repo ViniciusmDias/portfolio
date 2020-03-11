@@ -1,20 +1,21 @@
 import React from "react"
 import "./styles.css"
 import { FaArrowRight } from "react-icons/fa"
+import { Link } from "gatsby"
 
 export default function Intro() {
 	return (
 		<>
 			<div className="container intro">
-				<h1>Olá, me chamo Vinícius, sou Desenvolvedor Web.</h1>
+				<h1>Hi, I'm Vinícius a Frontend Developer.</h1>
 				<p>
-					Eu tenho 3 anos de experiência desenvolvendo sites e aplicações com
-					Html, Css, Javascript e React.
+					I have over 3 years experience developing websites and applications
+					with HTML, CSS, JS and React.
 				</p>
-				<a>
-					Tecnologias
+				<Link to="/technologies">
+					Technologies
 					<FaArrowRight />
-				</a>
+				</Link>
 			</div>
 		</>
 	)

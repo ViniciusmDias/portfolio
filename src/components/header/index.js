@@ -53,19 +53,21 @@ export default function Header() {
 		<>
 			<header className={`header ${moveStyle} `}>
 				<div className={`wrapper ${clickStyle}`}>
-					<h2 className="logo">{data.site.siteMetadata.title}</h2>
+					<h2 className="logo">
+						<Link to="/">{data.site.siteMetadata.title}</Link>
+					</h2>
 					<ul className="menu">
 						<li>
-							<Link href="/">Início</Link>
+							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<Link href="#projetos">Sobre</Link>
+							<Link to="/technologies">Technologies</Link>
 						</li>
 						<li>
-							<Link href="#servicos">Projetos</Link>
+							<Link to="/experience">Experience</Link>
 						</li>
 						<li>
-							<Link href="#contato">Contato</Link>
+							<Link to="/projects">Projects</Link>
 						</li>
 					</ul>
 					<div className="social-icons">
@@ -97,10 +99,10 @@ export default function Header() {
 				</div>
 				<div className={`aside ${clickStyle}`}>
 					<div className="aside-menu">
-						<Link to="/blog">Início</Link>
-						<Link to="/blog">Tecnologias</Link>
-						<Link to="/blog">Experiencia</Link>
-						<Link to="/blog">Projetos</Link>
+						<Link to="/">Home</Link>
+						<Link to="/technologies">Technologies</Link>
+						<Link to="/experience">Experience</Link>
+						<Link to="/projects">Projects</Link>
 					</div>
 					<div className="social-icons">
 						<a href="">

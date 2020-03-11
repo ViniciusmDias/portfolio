@@ -21,8 +21,7 @@ export default function Layout({ children }) {
 		<>
 			<main className="layout">{children}</main>
 			<footer>
-				© {new Date().getFullYear()}, Desenvolvido com
-				{` `}
+				© {new Date().getFullYear()}, Desenvolvido em React e{` `}
 				<a href="https://www.gatsbyjs.org">Gatsby</a>
 			</footer>
 		</>
