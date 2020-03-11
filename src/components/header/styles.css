@@ -11,6 +11,7 @@ header .wrapper {
 	transition: background-color 0.1s ease-out, transform 0.8s ease-out;
 	z-index: 2;
 	transition: transform 600ms ease 0s;
+	padding-left: 24px;
 }
 header .wrapper.click {
 	transform: translate3d(-80%, 0px, 0px);
@@ -21,7 +22,6 @@ header .wrapper .logo {
 	line-height: 28px;
 	text-align: left;
 	flex: 1;
-	margin-left: 1.2rem;
 	color: #292f35;
 	font-family: "Rubik-Bold", sans-serif;
 }

@@ -1,20 +1,54 @@
 .intro {
-	height: 580px;
+	-moz-box-align: center;
+	align-items: center;
+	animation: 600ms ease 600ms 1 normal forwards running intro;
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
+	max-width: 30ch;
+	opacity: 0;
+	height: 100vh;
+	margin-top: 110px;
+	align-self: center;
 }
-.intro h1 span {
-	font-family: "Rubik-BoldItalic";
-	color: #fff;
+@keyframes intro {
+	0% {
+		transform: translateY(5%);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 .intro h1 {
-	color: #3ebd93;
-	font-family: "Rubik-Italic";
-}
-.intro h3 {
 	color: #fff;
+	font-weight: 700;
+	line-height: 44px;
+	text-align: center;
+	margin-bottom: 16px;
 }
-.intro h3 span {
-	color: #ffe88c;
+.intro p {
+	font-weight: 400;
+	letter-spacing: 0px;
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 32px;
+}
+.intro a {
+	-moz-box-align: center;
+	align-items: center;
+	background-color: transparent;
+	display: inline-flex;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 16px 32px;
+	background-color: #fff;
+	color: #be4242;
+	border-radius: 10px;
+	transition: transform 0.5s ease;
+}
+.intro a:hover {
+	transform: scale(1.1);
 }

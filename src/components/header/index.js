@@ -56,7 +56,7 @@ export default function Header() {
 					<h2 className="logo">{data.site.siteMetadata.title}</h2>
 					<ul className="menu">
 						<li>
-							<Link href="/">Home</Link>
+							<Link href="/">Início</Link>
 						</li>
 						<li>
 							<Link href="#projetos">Sobre</Link>
@@ -97,7 +97,7 @@ export default function Header() {
 				</div>
 				<div className={`aside ${clickStyle}`}>
 					<div className="aside-menu">
-						<Link to="/blog">Home</Link>
+						<Link to="/blog">Início</Link>
 						<Link to="/blog">Tecnologias</Link>
 						<Link to="/blog">Experiencia</Link>
 						<Link to="/blog">Projetos</Link>
