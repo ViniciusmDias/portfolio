@@ -13,7 +13,7 @@ header .wrapper {
 	transition: transform 600ms ease 0s;
 }
 header .wrapper.click {
-	transform: translate3d(-72%, 0px, 0px);
+	transform: translate3d(-80%, 0px, 0px);
 }
 header .wrapper .logo {
 	font-weight: 700;
@@ -54,16 +54,18 @@ header .aside {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	width: calc(80% - 24px);
+	width: 80%;
 	align-items: center;
 	position: absolute;
 	background-color: #292f35;
 	padding-top: 100px;
-	transform: translate3d(137%, 0%, 0);
+	transform: translate3d(125%, 0%, 0);
 	transition: transform 600ms ease 0s;
 	z-index: 2;
 }
-
+header .aside.click {
+	transform: translate3d(25%, 0px, 0px);
+}
 header .aside a {
 	color: #e8e8e8;
 	font-weight: 700;
@@ -100,13 +102,17 @@ header .aside .social-icons {
 	margin-top: 75px;
 	width: 100%;
 }
-header .aside.click {
-	transform: translate3d(38%, 0px, 0px);
-}
-header ul {
+header .wrapper .menu {
 	display: none;
 }
-
+header .wrapper .social-icons {
+	display: none;
+}
+@media (min-width: 768px) {
+	header .aside {
+		transform: translate3d(129%, 0, 0);
+	}
+}
 @media (min-width: 1140px) {
 	header {
 		height: 80px;
@@ -115,7 +121,7 @@ header ul {
 		display: grid;
 		grid-template-columns: 240px 1fr 240px;
 	}
-	header .wrapper ul {
+	header .wrapper .menu {
 		display: flex;
 		justify-content: center;
 	}
@@ -129,10 +135,10 @@ header ul {
 		height: 44px;
 		outline: none;
 	}
-	header ul .wrapper li:hover a::after {
+	header .wrapper li:hover a::after {
 		width: 1.6rem;
 	}
-	header ul .wrapper li a::after {
+	header .wrapper li a::after {
 		content: "";
 		position: absolute;
 		bottom: -0.5rem;
