@@ -52,3 +52,7 @@
 .intro a:hover {
 	transform: scale(1.1);
 }
+.intro a svg {
+	font-size: 18px;
+	margin: 0 5px;
+}

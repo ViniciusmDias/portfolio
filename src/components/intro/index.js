@@ -1,5 +1,6 @@
 import React from "react"
 import "./styles.css"
+import { FaArrowRight } from "react-icons/fa"
 
 export default function Intro() {
 	return (
@@ -10,7 +11,10 @@ export default function Intro() {
 					Eu tenho 3 anos de experiência desenvolvendo sites e aplicações com
 					Html, Css, Javascript e React.
 				</p>
-				<a>Tecnologias</a>
+				<a>
+					Tecnologias
+					<FaArrowRight />
+				</a>
 			</div>
 		</>
 	)
