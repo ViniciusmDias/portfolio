@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import "./styles.css"
-import { Link, useStaticQuery } from "gatsby"
-import useDocumentScrollThrottled from "../useDocumentScrollThrottled/"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import HamburgerMenu from "react-hamburger-menu"
 import PropTypes from "prop-types"
 
@@ -17,24 +16,10 @@ export default function Header() {
 			}
 		}
 	`)
-	const [movScroll, setMovScroll] = useState(false)
+
 	const [movClick, setMovClick] = useState(false)
 	const [hamburguer, setHamburguer] = useState(false)
 
-	const MINIMUM_SCROLL = 80
-	const TIMEOUT_DELAY = 400
-
-	useDocumentScrollThrottled(callbackData => {
-		const { previousScrollTop, currentScrollTop } = callbackData
-		const isScrolledDown = previousScrollTop < currentScrollTop
-		const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
-
-		setTimeout(() => {
-			setMovScroll(isScrolledDown && isMinimumScrolled)
-		}, TIMEOUT_DELAY)
-	})
-
-	const moveStyle = movScroll ? "move" : ""
 	const clickStyle = movClick ? "click" : ""
 
 	function handleClick() {
@@ -51,7 +36,7 @@ export default function Header() {
 
 	return (
 		<>
-			<header className={`header ${moveStyle} `}>
+			<header className="header">
 				<div className={`wrapper ${clickStyle}`}>
 					<h2 className="logo">
 						<Link to="/">{data.site.siteMetadata.title}</Link>
@@ -81,10 +66,7 @@ export default function Header() {
 							<FaInstagram />
 						</a>
 					</div>
-					<button
-						onClick={handleClick}
-						className={`icon ${moveStyle} ${clickStyle}`}
-					>
+					<button onClick={handleClick} className={`icon ${clickStyle}`}>
 						<HamburgerMenu
 							isOpen={hamburguer}
 							width={25}
