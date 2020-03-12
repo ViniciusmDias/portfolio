@@ -39,7 +39,7 @@ export default function Header() {
 			<header className="header">
 				<div className={`wrapper ${clickStyle}`}>
 					<h2 className="logo">
-						<Link to="/">{data.site.siteMetadata.title}</Link>
+						<Link to="/">{data.site.siteMetadata.title}.</Link>
 					</h2>
 					<ul className="menu">
 						<li>
@@ -49,20 +49,20 @@ export default function Header() {
 							<Link to="/technologies">Technologies</Link>
 						</li>
 						<li>
-							<Link to="/experience">Experience</Link>
+							<Link to="/experiences">Experience</Link>
 						</li>
 						<li>
 							<Link to="/projects">Projects</Link>
 						</li>
 					</ul>
 					<div className="social-icons">
-						<a href="">
+						<a href="https://github.com/ViniciusmDias">
 							<FaGithub />
 						</a>
-						<a href="">
+						<a href="https://www.linkedin.com/in/vinicius-m-dias/">
 							<FaLinkedin />
 						</a>
-						<a href="">
+						<a href="https://www.instagram.com/diasvini10/">
 							<FaInstagram />
 						</a>
 					</div>
@@ -76,6 +76,7 @@ export default function Header() {
 							color="#fff"
 							borderRadius={0}
 							animationDuration={0.5}
+							menuClicked={handleClick}
 						/>
 					</button>
 				</div>
@@ -83,17 +84,17 @@ export default function Header() {
 					<div className="aside-menu">
 						<Link to="/">Home</Link>
 						<Link to="/technologies">Technologies</Link>
-						<Link to="/experience">Experience</Link>
+						<Link to="/experiences">Experience</Link>
 						<Link to="/projects">Projects</Link>
 					</div>
 					<div className="social-icons">
-						<a href="">
+						<a href="https://github.com/ViniciusmDias">
 							<FaGithub />
 						</a>
-						<a href="">
+						<a href="https://www.linkedin.com/in/vinicius-m-dias/">
 							<FaLinkedin />
 						</a>
-						<a href="">
+						<a href="https://www.instagram.com/diasvini10/">
 							<FaInstagram />
 						</a>
 					</div>

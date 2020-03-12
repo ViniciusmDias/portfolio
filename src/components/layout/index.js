@@ -20,10 +20,7 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<main className="layout">{children}</main>
-			<footer>
-				© {new Date().getFullYear()}, Desenvolvido em React e{` `}
-				<a href="https://www.gatsbyjs.org">Gatsby</a>
-			</footer>
+			<footer>© {new Date().getFullYear()}, Desenvolvido em Gatsby</footer>
 		</>
 	)
 }

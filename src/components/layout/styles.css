@@ -20,9 +20,6 @@
 html {
 	font-size: 20px;
 	font-family: "Rubik-Regular", sans-serif;
-	position: fixed;
-	width: 100%;
-	height: 100%;
 }
 .layout {
 	background-color: #1b85a8;
@@ -34,6 +31,13 @@ html {
 .layout canvas {
 	position: fixed;
 }
+.layout h1,
+h2,
+h3,
+h4,
+p {
+	color: #fff;
+}
 .layout h1 {
 	font-size: 1.6rem;
 	font-weight: lighter;
@@ -41,11 +45,15 @@ html {
 }
 
 .layout h2 {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: lighter;
 	letter-spacing: -0.5px;
 }
-
+.layout h3 {
+	font-size: 1.1rem;
+	font-weight: normal;
+	letter-spacing: -0.5px;
+}
 .layout p {
 	font-size: 1rem;
 	font-weight: normal;
@@ -56,11 +64,14 @@ a {
 	text-decoration: none;
 }
 
-.layout .container {
-	padding: 0px 24px;
+.container {
+	padding: 24px;
 }
 footer {
-	background-color: #ffe88c;
+	background-color: transparent;
+	font-size: 0.8rem;
+	display: flex;
+	justify-content: center;
 }
 footer a {
 	color: #1b85a8;

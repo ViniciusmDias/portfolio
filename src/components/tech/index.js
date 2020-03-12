@@ -3,10 +3,10 @@ import "./styles.css"
 import Img from "gatsby-image"
 
 import { useStaticQuery, graphql } from "gatsby"
-export default function Experience() {
+export default function Tech() {
 	const data = useStaticQuery(graphql`
-		query experienceQuery {
-			allMdx(filter: { frontmatter: { tag: { eq: "experiences" } } }) {
+		query techQuery {
+			allMdx(filter: { frontmatter: { tag: { eq: "techs" } } }) {
 				edges {
 					node {
 						frontmatter {
@@ -28,23 +28,23 @@ export default function Experience() {
 	const generateKey = pre => {
 		return `${pre}_${new Date().getTime()}`
 	}
-	const experiences = data.allMdx.edges
+	const techs = data.allMdx.edges
 	return (
-		<div className="experience">
-			{experiences.map(experience => (
-				<div
-					key={generateKey(experience.node.frontmatter.title)}
-					className="item"
-				>
-					<div className="image-item">
+		<div className="tech">
+			{techs.map(tech => (
+				<div className="item">
+					<div
+						key={generateKey(tech.node.frontmatter.title)}
+						className="image-item"
+					>
 						<Img
-							fixed={experience.node.frontmatter.imgUrl.childImageSharp.fixed}
-							alt="Experience icon"
+							fixed={tech.node.frontmatter.imgUrl.childImageSharp.fixed}
+							alt="Tech icon"
 						/>
 					</div>
 					<div className="info-item">
-						<h3>{experience.node.frontmatter.title}</h3>
-						<p>{experience.node.frontmatter.description}</p>
+						<h3>{tech.node.frontmatter.title}.</h3>
+						<p>{tech.node.frontmatter.description}</p>
 					</div>
 				</div>
 			))}

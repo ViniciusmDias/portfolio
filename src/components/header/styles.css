@@ -118,7 +118,7 @@ header .wrapper .social-icons {
 }
 @media (min-width: 768px) {
 	header .aside {
-		transform: translate3d(129%, 0, 0);
+		transform: translate3d(125%, 0, 0);
 	}
 }
 @media (min-width: 1140px) {

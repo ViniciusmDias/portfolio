@@ -1,7 +1,6 @@
 import React from "react"
 import "./styles.css"
-import { FaArrowRight } from "react-icons/fa"
-import { Link } from "gatsby"
+import Button from "../button"
 
 export default function Intro() {
 	return (
@@ -12,10 +11,7 @@ export default function Intro() {
 					I have over 3 years experience developing websites and applications
 					with HTML, CSS, JS and React.
 				</p>
-				<Link to="/technologies">
-					Technologies
-					<FaArrowRight />
-				</Link>
+				<Button title="technologies" />
 			</div>
 		</>
 	)

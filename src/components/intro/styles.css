@@ -9,6 +9,7 @@
 	height: 100vh;
 	margin-top: 110px;
 	align-self: center;
+	padding: 0px 24px;
 }
 @keyframes intro {
 	0% {
@@ -33,26 +34,4 @@
 	text-align: center;
 	color: #fff;
 	margin-bottom: 32px;
-}
-.intro a {
-	-moz-box-align: center;
-	align-items: center;
-	background-color: transparent;
-	display: inline-flex;
-	cursor: pointer;
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 1;
-	padding: 16px 32px;
-	background-color: #fff;
-	color: #1b85a8;
-	border-radius: 10px;
-	transition: transform 0.5s ease;
-}
-.intro a:hover {
-	transform: scale(1.1);
-}
-.intro a svg {
-	font-size: 18px;
-	margin: 0 5px;
 }

@@ -4,15 +4,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo/"
 import Header from "../components/header"
 
-import Experience from "../components/experience"
+import Experiences from "../components/experiences"
 
-const ExperiencePage = () => (
+const ExperiencesPage = () => (
 	<Layout>
-		<SEO title="Experience" />
+		<SEO title="Experiences" />
 		<Header />
 
-		<Experience />
+		<Experiences />
 	</Layout>
 )
 
-export default ExperiencePage
+export default ExperiencesPage
