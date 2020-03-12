@@ -7,7 +7,7 @@ export default function Techs() {
 		<div className="container techs">
 			<h1>Technologies.</h1>
 			<Tech />
-			<Button title="experience" />
+			<Button title="experiences" />
 		</div>
 	)
 }
