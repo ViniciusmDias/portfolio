@@ -1,3 +1,5 @@
+const config = require("./data/config")
+
 module.exports = {
 	siteMetadata: {
 		title: `Vinicius Dias`,
@@ -22,6 +24,19 @@ module.exports = {
 				name: `data`,
 				path: `${__dirname}/content`,
 				ignore: [`**/\.*`], // ignore files starting with a dot
+			},
+		},
+		{
+			resolve: "gatsby-plugin-manifest",
+			options: {
+				name: config.siteTitle,
+				short_name: config.siteTitleShort,
+				description: config.siteDescription,
+				start_url: "/",
+				background_color: config.backgroundColor,
+				theme_color: config.themeColor,
+				display: "standalone",
+				icon: "static/favicon.svg",
 			},
 		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality
