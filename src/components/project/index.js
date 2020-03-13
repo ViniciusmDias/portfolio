@@ -1,6 +1,7 @@
 import React from "react"
 import "./styles.css"
 import Img from "gatsby-image"
+import { FaGithub } from "react-icons/fa"
 
 import { useStaticQuery, graphql } from "gatsby"
 export default function Project() {
@@ -12,10 +13,13 @@ export default function Project() {
 						frontmatter {
 							description
 							title
+							categories
+							github
+							live
 							imgUrl {
 								childImageSharp {
-									fixed(width: 300, height: 170) {
-										...GatsbyImageSharpFixed
+									fixed {
+										src
 									}
 								}
 							}
@@ -34,14 +38,23 @@ export default function Project() {
 			{projects.map(project => (
 				<div key={generateKey(project.node.frontmatter.title)} className="item">
 					<div className="image-item">
-						<Img
-							fixed={project.node.frontmatter.imgUrl.childImageSharp.fixed}
-							alt="Project icon"
+						<img
+							src={project.node.frontmatter.imgUrl.childImageSharp.fixed.src}
+							alt="Project image"
 						/>
 					</div>
 					<div className="info-item">
 						<h3>{project.node.frontmatter.title}</h3>
-						<p>{project.node.frontmatter.description}</p>
+						<p className="description">
+							{project.node.frontmatter.description}
+						</p>
+						<p className="category">{project.node.frontmatter.categories}</p>
+						<div className="live">
+							<a href={project.node.frontmatter.github}>
+								View on Github <FaGithub />
+							</a>
+							<a href={project.node.frontmatter.live}>View on Web</a>
+						</div>
 					</div>
 				</div>
 			))}

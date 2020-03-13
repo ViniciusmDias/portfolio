@@ -49,7 +49,7 @@ export default function Header() {
 							<Link to="/technologies">Technologies</Link>
 						</li>
 						<li>
-							<Link to="/experiences">Experience</Link>
+							<Link to="/experiences">Experiences</Link>
 						</li>
 						<li>
 							<Link to="/projects">Projects</Link>
@@ -84,7 +84,7 @@ export default function Header() {
 					<div className="aside-menu">
 						<Link to="/">Home</Link>
 						<Link to="/technologies">Technologies</Link>
-						<Link to="/experiences">Experience</Link>
+						<Link to="/experiences">Experiences</Link>
 						<Link to="/projects">Projects</Link>
 					</div>
 					<div className="social-icons">

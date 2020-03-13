@@ -6,15 +6,20 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function Experience() {
 	const data = useStaticQuery(graphql`
 		query experienceQuery {
-			allMdx(filter: { frontmatter: { tag: { eq: "experiences" } } }) {
+			allMdx(
+				filter: { frontmatter: { tag: { eq: "experiences" } } }
+				sort: { fields: [frontmatter___order], order: ASC }
+			) {
 				edges {
 					node {
 						frontmatter {
 							description
 							title
+							year
+							categories
 							imgUrl {
 								childImageSharp {
-									fixed(width: 300, height: 170) {
+									fixed {
 										...GatsbyImageSharpFixed
 									}
 								}
@@ -43,8 +48,14 @@ export default function Experience() {
 						/>
 					</div>
 					<div className="info-item">
-						<h3>{experience.node.frontmatter.title}</h3>
-						<p>{experience.node.frontmatter.description}</p>
+						<div className="title">
+							<h3>{experience.node.frontmatter.title}</h3>
+							<p className="category">{experience.node.frontmatter.year}</p>
+						</div>
+						<p className="description">
+							{experience.node.frontmatter.description}
+						</p>
+						<p className="category">{experience.node.frontmatter.categories}</p>
 					</div>
 				</div>
 			))}

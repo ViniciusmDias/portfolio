@@ -14,7 +14,7 @@ export default function Tech() {
 							title
 							imgUrl {
 								childImageSharp {
-									fixed(width: 300, height: 170) {
+									fixed {
 										...GatsbyImageSharpFixed
 									}
 								}
@@ -32,11 +32,8 @@ export default function Tech() {
 	return (
 		<div className="tech">
 			{techs.map(tech => (
-				<div className="item">
-					<div
-						key={generateKey(tech.node.frontmatter.title)}
-						className="image-item"
-					>
+				<div key={generateKey(tech.node.frontmatter.title)} className="item">
+					<div className="image-item">
 						<Img
 							fixed={tech.node.frontmatter.imgUrl.childImageSharp.fixed}
 							alt="Tech icon"

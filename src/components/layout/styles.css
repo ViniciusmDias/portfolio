@@ -20,6 +20,7 @@
 html {
 	font-size: 20px;
 	font-family: "Rubik-Regular", sans-serif;
+	overflow-x: hidden;
 }
 .layout {
 	background-color: #1b85a8;
@@ -68,11 +69,9 @@ a {
 	padding: 24px;
 }
 footer {
-	background-color: transparent;
+	background-color: #292f35;
 	font-size: 0.8rem;
 	display: flex;
 	justify-content: center;
-}
-footer a {
-	color: #1b85a8;
+	color: #fff;
 }
