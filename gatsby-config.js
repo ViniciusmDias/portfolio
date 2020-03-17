@@ -3,7 +3,7 @@ const config = require("./data/config")
 module.exports = {
 	siteMetadata: {
 		title: `Vinicius Dias`,
-		description: `A little about myself`,
+		description: `A little about myself.`,
 		author: `@viniciusmdias`,
 	},
 	plugins: [
