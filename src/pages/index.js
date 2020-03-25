@@ -8,7 +8,10 @@ import Intro from "../components/intro"
 
 const IndexPage = () => (
 	<Layout>
-		<SEO title="Home" />
+		<SEO
+			title="Frontend Developer"
+			description="I actually builds WebSites, E-Commerces and Applications."
+		/>
 		<Header />
 
 		<Intro />

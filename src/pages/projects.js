@@ -8,7 +8,7 @@ import Projects from "../components/projects"
 
 const ProjectsPage = () => (
 	<Layout>
-		<SEO title="Projects" />
+		<SEO title="My Projects" description="All that I've had contributed" />
 		<Header />
 
 		<Projects />

@@ -8,7 +8,7 @@ import Techs from "../components/techs"
 
 const TechnologiesPage = () => (
 	<Layout>
-		<SEO title="Technologies" />
+		<SEO title="My Technologies" description="Things I know about" />
 		<Header />
 
 		<Techs />
