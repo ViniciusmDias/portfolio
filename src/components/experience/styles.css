@@ -1,10 +1,12 @@
 .experience {
-	display: grid;
+	display: flex;
 	flex-direction: column;
 	height: 100%;
 	-moz-box-pack: center;
 	justify-content: center;
-	gap: 24px;
+}
+.experience .item {
+	margin: 10px 0;
 }
 .experience .image-item {
 	height: 50vw;
@@ -57,22 +59,24 @@
 	margin-bottom: 12px;
 }
 @media (min-width: 768px) {
+	.experience {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	.experience .item {
+		width: 49%;
+	}
 	.experience .image-item {
 		height: 25vw;
 	}
 }
-@media (min-width: 930px) {
-	.experience {
-		grid-template-columns: 1fr 1fr;
-	}
-}
 @media (min-width: 1140px) {
-	.experience {
-		grid-template-columns: none;
-	}
 	.experience .item {
 		display: flex;
 		flex-direction: row-reverse;
+		width: 100%;
 	}
 	.experience .item .title {
 		flex-flow: row;

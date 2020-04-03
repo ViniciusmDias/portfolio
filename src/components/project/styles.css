@@ -4,7 +4,9 @@
 	height: 100%;
 	-moz-box-pack: center;
 	justify-content: center;
-	gap: 24px;
+}
+.project .item {
+	margin: 10px 0;
 }
 .project .image-item {
 	height: 48vw;
@@ -84,19 +86,22 @@
 	margin: 0 5px;
 }
 @media (min-width: 768px) {
+	.project {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+
+	.project .item {
+		width: 49%;
+	}
 	.project .image-item {
 		height: 25vw;
 	}
 	.project .info-item .live {
 		flex-direction: row;
 		justify-content: space-between;
-	}
-	.project {
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	.project .item {
-		width: 48%;
 	}
 }
 @media (min-width: 930px) {
