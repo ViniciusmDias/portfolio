@@ -15,6 +15,7 @@ header .wrapper {
 }
 header .wrapper.click {
 	transform: translate3d(-80%, 0px, 0px);
+	position: fixed;
 }
 header .wrapper .logo {
 	flex: 1;
@@ -64,9 +65,9 @@ header .aside {
 	flex-direction: column;
 	width: 80%;
 	align-items: center;
-	position: absolute;
+	position: fixed;
 	background-color: #292f35;
-	padding-top: 100px;
+	padding-top: 70px;
 	transform: translate3d(125%, 0%, 0);
 	transition: transform 600ms ease 0s;
 	z-index: 2;

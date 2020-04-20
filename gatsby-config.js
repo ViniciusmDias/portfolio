@@ -1,13 +1,17 @@
-const config = require("./data/config")
-
 module.exports = {
 	siteMetadata: {
 		title: `Vinicius Dias`,
-		description: `A little about myself.`,
-		author: `@viniciusmdias`,
+		author: {
+			name: `Vinicius Dias`,
+			summary: `who lives and works in Florianópois building useful things.`,
+		},
+		description: `A web-portfólio`,
+		siteUrl: `https://viniciusdias.works`,
+		social: {
+			twitter: `vinimdias10`,
+		},
 	},
 	plugins: [
-		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -15,9 +19,62 @@ module.exports = {
 				path: `${__dirname}/src/images`,
 			},
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/blog`,
+				name: `blog`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/assets`,
+				name: `assets`,
+			},
+		},
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 590,
+						},
+					},
+					{
+						resolve: `gatsby-remark-responsive-iframe`,
+						options: {
+							wrapperStyle: `margin-bottom: 1.0725rem`,
+						},
+					},
+				],
+			},
+		},
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: `UA-141117092-13`,
+			},
+		},
+
 		`gatsby-plugin-mdx`,
+		`gatsby-plugin-feed`,
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `Portfolio de Vinicius Dias`,
+				short_name: `VD`,
+				start_url: `/`,
+				background_color: `#ffffff`,
+				theme_color: `#663399`,
+				display: `minimal-ui`,
+				icon: `content/assets/favicon.svg`,
+			},
+		},
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -26,28 +83,15 @@ module.exports = {
 				ignore: [`**/\.*`], // ignore files starting with a dot
 			},
 		},
+		`gatsby-plugin-react-helmet`,
 		{
-			resolve: "gatsby-plugin-manifest",
+			resolve: `gatsby-plugin-typography`,
 			options: {
-				name: config.siteTitle,
-				short_name: config.siteTitleShort,
-				description: config.siteDescription,
-				start_url: "/",
-				background_color: config.backgroundColor,
-				theme_color: config.themeColor,
-				display: "standalone",
-				icon: "static/favicon.svg",
-			},
-		},
-		{
-			resolve: `gatsby-plugin-google-analytics`,
-			options: {
-				// replace "UA-XXXXXXXXX-X" with your own Tracking ID
-				trackingId: config.googleAnalyticsID,
+				pathToConfigModule: `src/utils/typography`,
 			},
 		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
-		// `gatsby-plugin-offline`,
+		`gatsby-plugin-offline`,
 	],
 }

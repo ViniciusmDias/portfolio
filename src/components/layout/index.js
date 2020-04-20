@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import "./styles.css"
 import "minireset.css"
@@ -20,7 +19,6 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<main className="layout">{children}</main>
-			<footer>© {new Date().getFullYear()}, Desenvolvido em Gatsby</footer>
 		</>
 	)
 }
