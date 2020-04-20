@@ -30,6 +30,7 @@ header .wrapper .logo h2 {
 	letter-spacing: 0px;
 	line-height: 28px;
 	text-align: left;
+	text-transform: uppercase;
 }
 header .wrapper .logo.click {
 	opacity: 0;
@@ -64,7 +65,7 @@ header .wrapper .icon.click {
 	opacity: 1 !important;
 	cursor: pointer;
 	padding-top: 0.6rem;
-	transform: translate3d(0%, 0, 0) !important;
+	transform: translate3d(-5%, 0, 0) !important;
 	display: flex;
 	width: 100%;
 	align-items: flex-start;
@@ -74,7 +75,7 @@ header .aside {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	width: 72vw;
+	width: 80vw;
 	align-items: center;
 	position: fixed;
 	background-image: linear-gradient(var(--bg-color) 10%, var(--blue));
@@ -84,7 +85,7 @@ header .aside {
 	z-index: 2;
 }
 header .aside.click {
-	transform: translate3d(25%, 0px, 0px);
+	transform: translate3d(20%, 0px, 0px);
 }
 header .aside a {
 	color: var(--dark-gray);
@@ -135,8 +136,6 @@ header .wrapper .social-icons {
 	}
 }
 @media (min-width: 1140px) {
-	header {
-	}
 	header .wrapper {
 		justify-content: flex-end;
 	}

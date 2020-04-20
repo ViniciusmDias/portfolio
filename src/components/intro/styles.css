@@ -1,15 +1,19 @@
 .intro {
-	-moz-box-align: center;
-	align-items: center;
 	animation: 600ms ease 600ms 1 normal forwards running intro;
 	display: flex;
 	flex-direction: column;
-	max-width: 32ch;
 	opacity: 0;
-	height: 80vh;
-	margin-top: 110px;
-	align-self: center;
-	padding: 0px 24px;
+	width: 100%;
+}
+.intro .background {
+	align-self: flex-start;
+	position: absolute;
+	width: 85%;
+	height: 70%;
+	background-position: center;
+	background-size: cover;
+	background-image: linear-gradient(to bottom, #fff 10%, #fd7e1512),
+		url("../../images/vinidois.jpg");
 }
 @keyframes intro {
 	0% {
@@ -21,17 +25,54 @@
 	}
 }
 .intro h1 {
-	color: #fff;
-	font-weight: 700;
-	line-height: 44px;
-	text-align: center;
+	font-family: "Rubik-Bold", sans-serif !important;
+	color: var(--dark-gray);
+	font-weight: 500;
+	line-height: 35px;
+	text-align: right;
 	margin-bottom: 16px;
+	margin-top: 110px;
+	padding: 0 1vw;
+	max-width: 20ch;
+	z-index: 2;
+	align-self: center;
 }
-.intro p {
+.intro .description {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+}
+.intro h3 {
 	font-weight: 400;
 	letter-spacing: 0px;
-	line-height: 32px;
-	text-align: center;
-	color: #fff;
-	margin-bottom: 32px;
+	margin-top: 55vh;
+}
+@media (min-width: 970px) {
+	.intro {
+		flex-wrap: wrap;
+	}
+
+	.intro .background {
+		width: 35vw;
+		height: 40vw;
+
+		margin-top: 10vh;
+		max-height: 600px;
+	}
+	.intro .description {
+		width: 40%;
+		margin-bottom: 10vh;
+	}
+	.intro h1 {
+		font-size: 4rem;
+		text-align: left;
+		line-height: 55px;
+		align-self: center;
+		margin-top: 10vh;
+	}
+
+	.intro h3 {
+		align-self: flex-end;
+		margin-top: 20vh;
+	}
 }

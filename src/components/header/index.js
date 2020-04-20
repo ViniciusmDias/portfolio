@@ -39,7 +39,7 @@ export default function Header() {
 			<header className="header">
 				<div className={`wrapper ${clickStyle}`}>
 					<Link to="/" className={`logo ${clickStyle}`}>
-						<h2>{data.site.siteMetadata.title}.</h2>
+						<h2>{data.site.siteMetadata.title}</h2>
 					</Link>
 					<ul className="menu">
 						<li>

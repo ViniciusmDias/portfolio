@@ -127,7 +127,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	background-color: var(--bg-color);
-	padding: 0px 10vw;
+	padding: 0px 4vw;
 }
 .layout canvas {
 	position: fixed;
@@ -140,9 +140,9 @@ p {
 	color: var(--near-black);
 }
 .layout h1 {
-	font-size: 1.6rem;
+	font-size: 2.3rem;
 	font-weight: lighter;
-	letter-spacing: -1.5px;
+	letter-spacing: 0.5px;
 }
 
 .layout h2 {
@@ -166,6 +166,13 @@ a {
 	box-shadow: none;
 }
 
-.container {
-	padding: 24px;
+@media (min-width: 970px) {
+	html,
+	body {
+		font-size: 20px;
+	}
+
+	.layout {
+		padding: 0 10vw;
+	}
 }
