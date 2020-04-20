@@ -66,9 +66,32 @@ textarea {
 html,
 body {
 	box-sizing: border-box;
-	font-size: 20px;
-	font-family: "Rubik-Regular", sans-serif;
+	font-size: 16px;
 	overflow-x: hidden;
+	--red: #ed4934;
+	--orange: #f5882d;
+	--orange-light: #ffc799;
+	--blue: #1b9393;
+	--blue-light: #a6f2f2;
+	--bg-color: #fff;
+	--gray: #777;
+	--near-black: #493e36;
+	--dark-gray: #4d3d33;
+	--light-gray: #eee;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+strong,
+span,
+li,
+input,
+button {
+	font-family: "Rubik-Regular", sans-serif !important;
 }
 *,
 *::before,
@@ -103,7 +126,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #1b85a8;
+	background-color: var(--bg-color);
+	padding: 0px 10vw;
 }
 .layout canvas {
 	position: fixed;
@@ -113,7 +137,7 @@ h2,
 h3,
 h4,
 p {
-	color: #fff;
+	color: var(--near-black);
 }
 .layout h1 {
 	font-size: 1.6rem;

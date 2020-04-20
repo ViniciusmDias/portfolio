@@ -18,13 +18,3 @@ Neste projeto precisavamos construir uma landing page com as 6 melhores notícia
 segue abaixo o link do site e do repositório no git:
 [covidnews](https://covidbreakingnews.netlify.app/).
 [repositório](https://github.com/ViniciusmDias/covid-news).
-
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
-
-![Chinese Salty Egg](./salty_egg.jpg)

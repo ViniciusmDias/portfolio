@@ -38,21 +38,18 @@ export default function Header() {
 		<>
 			<header className="header">
 				<div className={`wrapper ${clickStyle}`}>
-					<h2 className="logo">
-						<Link to="/">{data.site.siteMetadata.title}.</Link>
-					</h2>
+					<Link to="/" className={`logo ${clickStyle}`}>
+						<h2>{data.site.siteMetadata.title}.</h2>
+					</Link>
 					<ul className="menu">
 						<li>
 							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<Link to="/technologies">Technologies</Link>
+							<Link to="/technologies">Case Studies</Link>
 						</li>
 						<li>
 							<Link to="/experiences">Experiences</Link>
-						</li>
-						<li>
-							<Link to="/projects">Projects</Link>
 						</li>
 					</ul>
 					<div className="social-icons">
@@ -73,7 +70,7 @@ export default function Header() {
 							height={16}
 							strokeWidth={2}
 							rotate={0}
-							color="#fff"
+							color="var(--near-black)"
 							borderRadius={0}
 							animationDuration={0.5}
 							menuClicked={handleClick}

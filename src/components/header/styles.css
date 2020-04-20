@@ -1,6 +1,9 @@
 header {
 	display: flex;
-	height: 60px;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	height: 87px;
+	background-color: #fff;
 }
 header .wrapper {
 	display: flex;
@@ -11,39 +14,42 @@ header .wrapper {
 	transition: background-color 0.1s ease-out, transform 0.8s ease-out;
 	z-index: 2;
 	transition: transform 600ms ease 0s;
-	padding-left: 24px;
+	justify-content: space-between;
 }
 header .wrapper.click {
 	transform: translate3d(-80%, 0px, 0px);
-	position: fixed;
+	height: 100vh;
 }
 header .wrapper .logo {
-	flex: 1;
-	align-items: center;
-	display: flex;
-	height: 100%;
+	opacity: 1;
+	transition: ease-in opacity 3s;
 }
-header .wrapper .logo a {
-	display: flex;
-	align-items: center;
+header .wrapper .logo h2 {
 	height: 100%;
 	font-weight: 700;
 	letter-spacing: 0px;
 	line-height: 28px;
 	text-align: left;
-	color: #292f35;
-	font-family: "Rubik-Bold", sans-serif;
+}
+header .wrapper .logo.click {
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 0.35rem;
+}
+header .wrapper .logo:hover {
+	opacity: 0.7;
 }
 header .wrapper .icon {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	color: #484848;
+	color: var(--near-black);
 	transition: transform 0.3s ease-out, opacity 0.3s,
 		-webkit-transform 0.3s ease-out;
-	padding: 1rem;
+	padding: 1.5rem 0.5rem 1.5rem 1rem;
 	cursor: pointer;
-	background-color: #1b85a8;
+	background-color: var(--bg-color);
 	border: none;
 	outline: none;
 }
@@ -57,16 +63,21 @@ header .wrapper .icon.click {
 	pointer-events: all;
 	opacity: 1 !important;
 	cursor: pointer;
+	padding-top: 0.6rem;
 	transform: translate3d(0%, 0, 0) !important;
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: flex-end;
 }
 header .aside {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	width: 80%;
+	width: 72vw;
 	align-items: center;
 	position: fixed;
-	background-color: #292f35;
+	background-image: linear-gradient(var(--bg-color) 10%, var(--blue));
 	padding-top: 70px;
 	transform: translate3d(125%, 0%, 0);
 	transition: transform 600ms ease 0s;
@@ -76,7 +87,7 @@ header .aside.click {
 	transform: translate3d(25%, 0px, 0px);
 }
 header .aside a {
-	color: #e8e8e8;
+	color: var(--dark-gray);
 	font-weight: 700;
 	height: 44px;
 	margin: 0px 12px;
@@ -85,8 +96,9 @@ header .aside a {
 	display: flex;
 	align-items: center;
 }
-header .aside a:hover {
-	color: #fff;
+header a:hover,
+header a:hover svg {
+	color: var(--dark-gray);
 }
 header .aside-menu a::after {
 	background-color: #1b85a8;
@@ -124,25 +136,27 @@ header .wrapper .social-icons {
 }
 @media (min-width: 1140px) {
 	header {
-		height: 80px;
 	}
 	header .wrapper {
-		display: grid;
-		grid-template-columns: 240px 1fr 240px;
+		justify-content: flex-end;
 	}
 	header .wrapper .menu {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
+		flex: 1;
 	}
 	header .wrapper li a {
 		display: flex;
 		align-items: center;
-		color: #292f35;
+		color: var(--gray);
 		font-size: 1rem;
 		position: relative;
 		margin: 0 1rem;
 		height: 44px;
 		outline: none;
+	}
+	header .wrapper li a:hover {
+		color: var(--dark-gray);
 	}
 	header .wrapper li:hover a::after {
 		width: 1.6rem;
@@ -154,19 +168,24 @@ header .wrapper .social-icons {
 		left: 0;
 		width: 0;
 		height: 0.15rem;
-		background-color: #008489;
+		background-color: var(--orange-light);
 		-webkit-transition: width 0.2s;
 		transition: width 0.2s;
 	}
 	header .wrapper .social-icons {
 		display: flex;
-		justify-content: space-around;
-		height: 100%;
-		align-items: center;
-		background: #1b85a8;
 	}
 	header .wrapper .social-icons a {
-		color: #fff;
+		height: 48px;
+		width: 48px;
+		margin: 0 0 0 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--gray);
+	}
+	header .wrapper .social-icons a svg {
+		font-size: 24px;
 	}
 	header .wrapper .icon {
 		display: none;
