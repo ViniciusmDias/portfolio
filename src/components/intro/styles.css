@@ -50,6 +50,13 @@
 @media (min-width: 970px) {
 	.intro {
 		flex-wrap: wrap;
+		flex-direction: row;
+
+		justify-content: space-between;
+
+		align-items: flex-start;
+
+		margin-bottom: 5vh;
 	}
 
 	.intro .background {
@@ -69,6 +76,9 @@
 		line-height: 55px;
 		align-self: center;
 		margin-top: 10vh;
+		position: absolute;
+
+		top: 0;
 	}
 
 	.intro h3 {
