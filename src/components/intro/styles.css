@@ -71,11 +71,11 @@
 		margin-bottom: 10vh;
 	}
 	.intro h1 {
-		font-size: 4rem;
+		font-size: 3rem;
 		text-align: left;
 		line-height: 55px;
 		align-self: center;
-		margin-top: 10vh;
+		margin: 10vh 10vw;
 		position: absolute;
 
 		top: 0;
