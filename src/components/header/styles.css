@@ -78,7 +78,7 @@ header .aside {
 	width: 80vw;
 	align-items: center;
 	position: fixed;
-	background-image: linear-gradient(var(--bg-color) 10%, var(--blue));
+	background-image: linear-gradient(var(--bg-color) 10%, var(--orange-light));
 	padding-top: 70px;
 	transform: translate3d(125%, 0%, 0);
 	transition: transform 600ms ease 0s;
