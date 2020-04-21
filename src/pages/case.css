@@ -28,6 +28,7 @@
 	justify-content: center;
 	align-items: center;
 	background-image: linear-gradient(to bottom, #fff 10%, #ffc799);
+	border-radius: 0.125rem;
 }
 .cases section article a:hover .image {
 	box-shadow: 0 18px 35px rgba(90, 50, 50, 0.1),
@@ -35,6 +36,8 @@
 	transform: translateY(-4px);
 }
 .cases section article .about {
+	display: flex;
+	flex-direction: column;
 	padding: 1rem 0;
 }
 .cases article .about {
@@ -51,4 +54,18 @@
 .cases article a:hover small,
 .cases article a:hover p {
 	color: var(--near-black);
+}
+
+@media (min-width: 550px) {
+	.cases section {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.cases section article {
+		width: 48%;
+	}
+	.cases section article .image {
+		height: 256px;
+	}
 }

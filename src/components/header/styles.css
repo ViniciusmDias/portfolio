@@ -96,10 +96,12 @@ header .aside a {
 	position: relative;
 	display: flex;
 	align-items: center;
+	transition: opacity 0.15s ease-in;
+	opacity: 1;
 }
 header a:hover,
 header a:hover svg {
-	color: var(--dark-gray);
+	opacity: 0.7;
 }
 header .aside-menu a::after {
 	background-color: #1b85a8;
@@ -153,9 +155,6 @@ header .wrapper .social-icons {
 		margin: 0 1rem;
 		height: 44px;
 		outline: none;
-	}
-	header .wrapper li a:hover {
-		color: var(--dark-gray);
 	}
 	header .wrapper li:hover a::after {
 		width: 1.6rem;

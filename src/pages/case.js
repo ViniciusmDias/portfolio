@@ -7,9 +7,7 @@ import { rhythm } from "../utils/typography"
 import Header from "../components/header"
 import Button from "../components/button"
 import Img from "gatsby-image"
-import Image from "../images/projects/covid-logo.png"
-
-import "./blog.css"
+import "./case.css"
 const BlogIndex = ({ data }) => {
 	const posts = data.allMarkdownRemark.edges
 
@@ -31,7 +29,10 @@ const BlogIndex = ({ data }) => {
 							<article key={node.fields.slug}>
 								<Link style={{ boxShadow: `none` }} to={node.fields.slug}>
 									<div className="image">
-										<img src={Image} alt="logo project" />
+										<Img
+											fixed={node.frontmatter.imgUrl.childImageSharp.fixed}
+											alt={`logo of ${node.frontmatter.title}`}
+										/>
 									</div>
 									<section className="about">
 										<small>{node.frontmatter.date}</small>
@@ -83,7 +84,13 @@ export const pageQuery = graphql`
 						title
 						description
 						techs
-						imgUrl
+						imgUrl {
+							childImageSharp {
+								fixed {
+									...GatsbyImageSharpFixed
+								}
+							}
+						}
 					}
 				}
 			}

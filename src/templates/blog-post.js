@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Bio from "../components/bio"
 import { rhythm, scale } from "../utils/typography"
+import HeaderPost from "../components/header-post"
+import Img from "gatsby-image"
+import "./styles.css"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
 	const post = data.markdownRemark
@@ -17,8 +20,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 				title={post.frontmatter.title}
 				description={post.frontmatter.description || post.excerpt}
 			/>
-			<article>
-				<header>
+			<HeaderPost />
+			<article className="single-post">
+				<div className="header">
+					<Img
+						fixed={post.frontmatter.imgUrl.childImageSharp.fixed}
+						alt={`logo of ${post.frontmatter.title}`}
+					/>
 					<h1
 						style={{
 							marginTop: rhythm(1),
@@ -27,6 +35,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 					>
 						{post.frontmatter.title}
 					</h1>
+					<h2>{post.frontmatter.description}</h2>
+					<strong>Tags</strong>
+					<h3>{post.frontmatter.techs}</h3>
+					<strong>Date</strong>
 					<p
 						style={{
 							...scale(-1 / 5),
@@ -36,7 +48,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 					>
 						{post.frontmatter.date}
 					</p>
-				</header>
+				</div>
 				<section dangerouslySetInnerHTML={{ __html: post.html }} />
 				<hr
 					style={{
@@ -92,6 +104,14 @@ export const pageQuery = graphql`
 			excerpt(pruneLength: 160)
 			html
 			frontmatter {
+				imgUrl {
+					childImageSharp {
+						fixed {
+							...GatsbyImageSharpFixed
+						}
+					}
+				}
+				techs
 				title
 				date(formatString: "MMMM DD, YYYY")
 				description

@@ -10,3 +10,25 @@
 .experiences h1 {
 	width: 100%;
 }
+.experiences .social-icons {
+	background-color: rgb(255, 255, 255);
+	border-radius: 6px;
+	display: flex;
+	-moz-box-pack: justify;
+	justify-content: space-between;
+	padding: 12px 16px;
+	width: 100%;
+	max-width: 240px;
+}
+.experiences .social-icons a {
+	-moz-box-align: center;
+	align-items: center;
+	border-radius: 4px;
+	display: inline-flex;
+	height: 40px;
+	-moz-box-pack: center;
+	justify-content: center;
+	vertical-align: middle;
+	width: 40px;
+	color: #000;
+}

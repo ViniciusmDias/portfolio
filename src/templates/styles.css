@@ -1,0 +1,8 @@
+.single-post {
+	display: flex;
+	flex-direction: column;
+}
+.single-post header {
+	display: flex;
+	flex-direction: column;
+}
