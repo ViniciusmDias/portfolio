@@ -2,6 +2,8 @@
 title: Covid News
 date: "2020-04-15T22:12:03.284Z"
 description: "Site de noticiais sobre o novo Corona Virus."
+techs: "html, css"
+imgUrl: "../../src/images/experiences/freelancer.png"
 ---
 
 Meu primeiro projeto do Bootcamp da GamaAcademy.

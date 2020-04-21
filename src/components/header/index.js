@@ -46,10 +46,10 @@ export default function Header() {
 							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<Link to="/technologies">Case Studies</Link>
+							<Link to="/case">Case Studies</Link>
 						</li>
 						<li>
-							<Link to="/experiences">Experiences</Link>
+							<Link to="/experiences">Work</Link>
 						</li>
 					</ul>
 					<div className="social-icons">
@@ -80,9 +80,8 @@ export default function Header() {
 				<div className={`aside ${clickStyle}`}>
 					<div className="aside-menu">
 						<Link to="/">Home</Link>
-						<Link to="/technologies">Technologies</Link>
-						<Link to="/experiences">Experiences</Link>
-						<Link to="/projects">Projects</Link>
+						<Link to="/case">Case Studies</Link>
+						<Link to="/experiences">Work</Link>
 					</div>
 					<div className="social-icons">
 						<a href="https://github.com/ViniciusmDias">

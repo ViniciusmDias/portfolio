@@ -48,7 +48,7 @@ header .wrapper .icon {
 	color: var(--near-black);
 	transition: transform 0.3s ease-out, opacity 0.3s,
 		-webkit-transform 0.3s ease-out;
-	padding: 1.5rem 0.5rem 1.5rem 1rem;
+	padding: 1.5rem 0rem 1.5rem 1.5rem;
 	cursor: pointer;
 	background-color: var(--bg-color);
 	border: none;

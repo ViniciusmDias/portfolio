@@ -31,7 +31,7 @@
 	line-height: 35px;
 	text-align: right;
 	margin-bottom: 16px;
-	margin-top: 110px;
+	margin-top: 60px;
 	padding: 0 1vw;
 	max-width: 20ch;
 	z-index: 2;
@@ -62,8 +62,8 @@
 	.intro .background {
 		width: 35vw;
 		height: 40vw;
-
 		margin-top: 10vh;
+		position: relative;
 		max-height: 600px;
 	}
 	.intro .description {
