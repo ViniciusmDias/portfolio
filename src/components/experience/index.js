@@ -34,31 +34,40 @@ export default function Experience() {
 		return `${pre}_${new Date().getTime()}`
 	}
 	const experiences = data.allMdx.edges
+
 	return (
-		<div className="experience">
-			{experiences.map(experience => (
-				<div
-					key={generateKey(experience.node.frontmatter.title)}
-					className="item"
-				>
-					<div className="image-item">
-						<Img
-							fixed={experience.node.frontmatter.imgUrl.childImageSharp.fixed}
-							alt="Experience icon"
-						/>
-					</div>
-					<div className="info-item">
-						<div className="title">
-							<h3>{experience.node.frontmatter.title}</h3>
-							<p className="category">{experience.node.frontmatter.year}</p>
+		<section className="content">
+			<div className="experience">
+				{experiences.map(experience => (
+					<div
+						key={generateKey(experience.node.frontmatter.title)}
+						className="item"
+					>
+						<div className="info-item">
+							<div className="title">
+								<h3>{experience.node.frontmatter.title}</h3>
+							</div>
+							<p className="description">
+								{experience.node.frontmatter.description}
+							</p>
+							<div className="category">
+								{experience.node.frontmatter.categories
+									.split(", ")
+									.map(item => (
+										<p>{item}</p>
+									))}
+							</div>
 						</div>
-						<p className="description">
-							{experience.node.frontmatter.description}
-						</p>
-						<p className="category">{experience.node.frontmatter.categories}</p>
+						<div className="timeline">
+							<ul>
+								<li>
+									<span>{experience.node.frontmatter.year}</span>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			))}
-		</div>
+				))}
+			</div>
+		</section>
 	)
 }
