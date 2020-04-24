@@ -10,7 +10,7 @@ const IndexPage = () => (
 	<Layout>
 		<SEO
 			title="Frontend Developer"
-			description="I actually builds WebSites, E-Commerces and Applications."
+			description="I'm live in Florianópolis and actually builds WebSites, E-Commerces and LandingPages."
 		/>
 		<Header />
 
