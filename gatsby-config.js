@@ -69,7 +69,14 @@ module.exports = {
 				trackingId: `UA-141117092-13`,
 			},
 		},
-
+		{
+			resolve: "gatsby-plugin-robots-txt",
+			options: {
+				host: "https://viniciusdias.works",
+				sitemap: "https://viniciusdias.works/sitemap.xml",
+				policy: [{ userAgent: "*", allow: "/" }],
+			},
+		},
 		`gatsby-plugin-mdx`,
 		`gatsby-plugin-feed`,
 		{

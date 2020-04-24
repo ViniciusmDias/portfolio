@@ -46,7 +46,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
 						{seo.image && (
 							<meta
 								property="og:image"
-								content="https://scontent.ffln1-1.fna.fbcdn.net/v/t1.0-9/91273606_3300776629951515_1865864948798717952_n.png?_nc_cat=111&_nc_sid=85a577&_nc_ohc=TVNGuGO30KwAX8oZxti&_nc_ht=scontent.ffln1-1.fna&oh=9a5862f1adf886cf63972dadd11b4271&oe=5EB0EDF8"
+								content="https://covidbreakingnews.netlify.app/img/profiles/vinidias/vinidias.png"
 							/>
 						)}
 
