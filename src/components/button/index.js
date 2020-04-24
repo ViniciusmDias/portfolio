@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 export default function Button({ title, key }) {
 	return (
 		<>
-			<Link class="button" to={key}>
+			<Link class="button" to={`/${key}`}>
 				{title}
 				<FaArrowRight />
 			</Link>
