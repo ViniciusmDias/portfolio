@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { FaArrowRight } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Bio from "../components/bio"
 import { rhythm, scale } from "../utils/typography"
 import HeaderPost from "../components/header-post"
-import Button from "../components/button"
 import "./styles.css"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -29,11 +29,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 					<h4> {post.frontmatter.date}</h4>
 				</div>
 				<section dangerouslySetInnerHTML={{ __html: post.html }} />
-				<Button
-					title="Acessar site"
-					key="https://covidbreakingnews.netlify.app/"
-				/>
-
+				<a className="button" href="https://covidbreakingnews.netlify.app/">
+					Acessar site
+					<FaArrowRight />
+				</a>
 				<hr
 					style={{
 						marginBottom: rhythm(1),
