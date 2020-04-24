@@ -16,9 +16,5 @@ export default function Layout({ children }) {
 		children: PropTypes.node.isRequired,
 	}
 
-	return (
-		<>
-			<main className="layout">{children}</main>
-		</>
-	)
+	return <main className="layout">{children}</main>
 }

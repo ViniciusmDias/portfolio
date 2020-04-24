@@ -8,6 +8,7 @@ import Header from "../components/header"
 import Button from "../components/button"
 import Img from "gatsby-image"
 import "./case.css"
+
 const BlogIndex = ({ data }) => {
 	const posts = data.allMarkdownRemark.edges
 
@@ -30,7 +31,7 @@ const BlogIndex = ({ data }) => {
 								<Link style={{ boxShadow: `none` }} to={node.fields.slug}>
 									<div className="image">
 										<Img
-											fixed={node.frontmatter.imgUrl.childImageSharp.fixed}
+											fixed={node.frontmatter.img.childImageSharp.fixed}
 											alt={`logo of ${node.frontmatter.title}`}
 										/>
 									</div>
@@ -49,7 +50,9 @@ const BlogIndex = ({ data }) => {
 											}}
 										/>
 										<div className="techs">
-											<span>{node.frontmatter.techs}</span>
+											{node.frontmatter.techs.split(", ").map(item => (
+												<span>{item}</span>
+											))}
 										</div>
 									</section>
 								</Link>
@@ -84,7 +87,7 @@ export const pageQuery = graphql`
 						title
 						description
 						techs
-						imgUrl {
+						img {
 							childImageSharp {
 								fixed {
 									...GatsbyImageSharpFixed

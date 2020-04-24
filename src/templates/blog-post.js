@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Bio from "../components/bio"
 import { rhythm, scale } from "../utils/typography"
 import HeaderPost from "../components/header-post"
-import Img from "gatsby-image"
+import Button from "../components/button"
 import "./styles.css"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -23,33 +23,17 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 			<HeaderPost />
 			<article className="single-post">
 				<div className="header">
-					<Img
-						fixed={post.frontmatter.imgUrl.childImageSharp.fixed}
-						alt={`logo of ${post.frontmatter.title}`}
-					/>
-					<h1
-						style={{
-							marginTop: rhythm(1),
-							marginBottom: 0,
-						}}
-					>
-						{post.frontmatter.title}
-					</h1>
+					<h4>{post.frontmatter.techs}</h4>
+					<h1>{post.frontmatter.title}</h1>
 					<h2>{post.frontmatter.description}</h2>
-					<strong>Tags</strong>
-					<h3>{post.frontmatter.techs}</h3>
-					<strong>Date</strong>
-					<p
-						style={{
-							...scale(-1 / 5),
-							display: `block`,
-							marginBottom: rhythm(1),
-						}}
-					>
-						{post.frontmatter.date}
-					</p>
+					<h4> {post.frontmatter.date}</h4>
 				</div>
 				<section dangerouslySetInnerHTML={{ __html: post.html }} />
+				<Button
+					title="Acessar site"
+					key="https://covidbreakingnews.netlify.app/"
+				/>
+
 				<hr
 					style={{
 						marginBottom: rhythm(1),
@@ -104,7 +88,7 @@ export const pageQuery = graphql`
 			excerpt(pruneLength: 160)
 			html
 			frontmatter {
-				imgUrl {
+				img {
 					childImageSharp {
 						fixed {
 							...GatsbyImageSharpFixed

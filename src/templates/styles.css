@@ -1,8 +1,40 @@
 .single-post {
+	margin-top: 6vh;
 	display: flex;
 	flex-direction: column;
 }
-.single-post header {
+.single-post .header {
 	display: flex;
 	flex-direction: column;
+}
+.single-post .header h2 {
+	margin-bottom: 5vh;
+	text-transform: none;
+}
+.single-post .header h4 {
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.single-post section {
+	margin: 5vh 0 3vh;
+}
+.single-post section h2 {
+	margin: 4vh 0 1vh;
+	font-weight: 700;
+}
+.single-post section ul {
+	margin-bottom: 2vh;
+	list-style: circle;
+}
+.single-post section a {
+	text-decoration: underline;
+}
+.single-post .button {
+	align-self: center;
+}
+@media (min-width: 768px) {
+	.single-post .button {
+		align-self: flex-start;
+	}
 }

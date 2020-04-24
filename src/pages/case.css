@@ -55,6 +55,16 @@
 .cases article a:hover p {
 	color: var(--near-black);
 }
+.cases article .about .techs span {
+	margin: 0 1vh 1vh 0;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1;
+	padding: 6px 8px;
+	border-radius: 4px;
+	background-color: var(--near-black);
+	color: var(--orange-light);
+}
 
 @media (min-width: 550px) {
 	.cases section {
