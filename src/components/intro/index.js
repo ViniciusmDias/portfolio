@@ -9,7 +9,7 @@ export default function Intro() {
 			<SocialProfileJsonLd
 				type="Person"
 				name="Vinicius Dias "
-				url="https://vinicius.works/"
+				url="https://viniciusdias.works/"
 				sameAs={[
 					"https://www.facebook.com/diasvini",
 					"https://instagram.com/diasvini10",
