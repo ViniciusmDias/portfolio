@@ -28,7 +28,11 @@ const BlogIndex = ({ data }) => {
 						const title = node.frontmatter.title || node.fields.slug
 						return (
 							<article key={node.fields.slug}>
-								<Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+								<Link
+									style={{ boxShadow: `none` }}
+									title="go to project"
+									to={node.fields.slug}
+								>
 									<div className="image">
 										<Img
 											fixed={node.frontmatter.imgUrl.childImageSharp.fixed}

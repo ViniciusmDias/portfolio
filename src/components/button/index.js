@@ -8,7 +8,7 @@ export default function Button({ title }) {
 
 	return (
 		<>
-			<Link class="button" to={`/${route[0]}`}>
+			<Link class="button" title={`Go to ${title}`} to={`/${route[0]}`}>
 				{title}
 				<FaArrowRight />
 			</Link>

@@ -1,6 +1,8 @@
 module.exports = {
 	siteMetadata: {
 		title: `Vinicius Dias`,
+		titleTemplate: "Vinicius Dias · Frontend Developer",
+
 		author: {
 			name: `Vinicius Dias`,
 			summary: `who lives and works in Florianópois building useful things.`,
@@ -10,6 +12,11 @@ module.exports = {
 		social: {
 			twitter: `vinimdias10`,
 		},
+		url: "https://viniciusdias.works",
+		siteUrl: "https://viniciusdias.works", // No trailing slash allowed!
+		// Path to your image you placed in the 'static' folder
+		twitterUsername: "@vinimdias10",
+		image: `${__dirname}/src/img/profile.jpeg`, // Path to your image you placed in the 'static' folder
 	},
 	plugins: [
 		{
@@ -19,6 +26,7 @@ module.exports = {
 				path: `${__dirname}/src/images`,
 			},
 		},
+
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -52,6 +60,7 @@ module.exports = {
 				],
 			},
 		},
+		`gatsby-plugin-next-seo`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
 		{

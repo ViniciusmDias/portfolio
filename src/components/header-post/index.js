@@ -19,10 +19,10 @@ export default function HeaderPost() {
 		<>
 			<header className="header">
 				<div className="wrapper">
-					<Link to="/" className="logo">
+					<Link title="Go to home" to="/" className="logo">
 						<h2>{data.site.siteMetadata.title}</h2>
 					</Link>
-					<Link to="/case" className="case">
+					<Link title="Go to page case" to="/case" className="case">
 						Case Studies
 						<IoIosReturnLeft />
 					</Link>

@@ -8,13 +8,22 @@ export default function Projects() {
 			<h1>Projects.</h1>
 			<Project />
 			<div className="social-icons">
-				<a href="https://github.com/ViniciusmDias">
+				<a
+					title="Go to vinicius dias github"
+					href="https://github.com/ViniciusmDias"
+				>
 					<FaGithub />
 				</a>
-				<a href="https://www.linkedin.com/in/vinicius-m-dias/">
+				<a
+					title="Go to vinicius dias linkedin"
+					href="https://www.linkedin.com/in/vinicius-m-dias/"
+				>
 					<FaLinkedin />
 				</a>
-				<a href="https://www.instagram.com/diasvini10/">
+				<a
+					title="Go to vinicius dias instagram"
+					href="https://www.instagram.com/diasvini10/"
+				>
 					<FaInstagram />
 				</a>
 			</div>

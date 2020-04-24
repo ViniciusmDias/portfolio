@@ -1,10 +1,20 @@
 import React from "react"
 import "./styles.css"
 import Button from "../button"
+import { SocialProfileJsonLd } from "gatsby-plugin-next-seo"
 
 export default function Intro() {
 	return (
 		<>
+			<SocialProfileJsonLd
+				type="Person"
+				name="Impulse"
+				url="https://geluxeletrica.com.br/"
+				sameAs={[
+					"https://www.facebook.com/geluxeletrica",
+					"https://instagram.com/geluxeletrica",
+				]}
+			/>
 			<div className="container intro">
 				<h1>I'm a developer of sites and aplications.</h1>
 				<div className="background" />
@@ -13,7 +23,7 @@ export default function Intro() {
 						I have over 3 years experience developing websites and applications
 						with HTML, CSS, JS and React.
 					</h3>
-					<Button title="case studies" key="cases" />
+					<Button title="case studies" />
 				</div>
 			</div>
 		</>

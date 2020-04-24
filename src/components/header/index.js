@@ -38,28 +38,43 @@ export default function Header() {
 		<>
 			<header className="header">
 				<div className={`wrapper ${clickStyle}`}>
-					<Link to="/" className={`logo ${clickStyle}`}>
+					<Link to="/" title="Go to hometitle" className={`logo ${clickStyle}`}>
 						<h2>{data.site.siteMetadata.title}</h2>
 					</Link>
 					<ul className="menu">
 						<li>
-							<Link to="/">Home</Link>
+							<Link title="Go to home page" to="/">
+								Home
+							</Link>
 						</li>
 						<li>
-							<Link to="/case">Case Studies</Link>
+							<Link title="Go to case studies page" to="/case">
+								Case Studies
+							</Link>
 						</li>
 						<li>
-							<Link to="/experiences">Experience</Link>
+							<Link title="Go to experiences page" to="/experiences">
+								Experience
+							</Link>
 						</li>
 					</ul>
 					<div className="social-icons">
-						<a href="https://github.com/ViniciusmDias">
+						<a
+							title="Go to vinicius dias github"
+							href="https://github.com/ViniciusmDias"
+						>
 							<FaGithub />
 						</a>
-						<a href="https://www.linkedin.com/in/vinicius-m-dias/">
+						<a
+							title="Go to vinicius dias linkedin"
+							href="https://www.linkedin.com/in/vinicius-m-dias/"
+						>
 							<FaLinkedin />
 						</a>
-						<a href="https://www.instagram.com/diasvini10/">
+						<a
+							title="Go to vinicius dias instagram"
+							href="https://www.instagram.com/diasvini10/"
+						>
 							<FaInstagram />
 						</a>
 					</div>
@@ -79,18 +94,33 @@ export default function Header() {
 				</div>
 				<div className={`aside ${clickStyle}`}>
 					<div className="aside-menu">
-						<Link to="/">Home</Link>
-						<Link to="/case">Case Studies</Link>
-						<Link to="/experiences">Experience</Link>
+						<Link title="Go to homepage" to="/">
+							Home
+						</Link>
+						<Link title="Go to case studies page" to="/case">
+							Case Studies
+						</Link>
+						<Link title="Go to experience page" to="/experiences">
+							Experience
+						</Link>
 					</div>
 					<div className="social-icons">
-						<a href="https://github.com/ViniciusmDias">
+						<a
+							title="Go to vinicius dias github"
+							href="https://github.com/ViniciusmDias"
+						>
 							<FaGithub />
 						</a>
-						<a href="https://www.linkedin.com/in/vinicius-m-dias/">
+						<a
+							title="Go to vinicius dias linkedin"
+							href="https://www.linkedin.com/in/vinicius-m-dias/"
+						>
 							<FaLinkedin />
 						</a>
-						<a href="https://www.instagram.com/diasvini10/">
+						<a
+							title="Go to vinicius dias instagram"
+							href="https://www.instagram.com/diasvini10/"
+						>
 							<FaInstagram />
 						</a>
 					</div>
