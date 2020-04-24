@@ -31,7 +31,7 @@ const BlogIndex = ({ data }) => {
 								<Link style={{ boxShadow: `none` }} to={node.fields.slug}>
 									<div className="image">
 										<Img
-											fixed={node.frontmatter.img.childImageSharp.fixed}
+											fixed={node.frontmatter.imgUrl.childImageSharp.fixed}
 											alt={`logo of ${node.frontmatter.title}`}
 										/>
 									</div>
@@ -87,7 +87,7 @@ export const pageQuery = graphql`
 						title
 						description
 						techs
-						img {
+						imgUrl {
 							childImageSharp {
 								fixed {
 									...GatsbyImageSharpFixed
