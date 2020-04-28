@@ -27,7 +27,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: linear-gradient(to bottom, #fff 10%, #ffc799);
+	background-image: linear-gradient(to bottom, #fff 90%, #ffc799);
 	border-radius: 0.125rem;
 }
 .works section article .image .gatsby-image-wrapper {

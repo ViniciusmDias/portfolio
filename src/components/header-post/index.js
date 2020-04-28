@@ -22,8 +22,8 @@ export default function HeaderPost() {
 					<Link title="Go to home" to="/" className="logo">
 						<h2>{data.site.siteMetadata.title}</h2>
 					</Link>
-					<Link title="Go to page case" to="/case" className="case">
-						Case Studies
+					<Link title="Go to page projects" to="/projects" className="case">
+						Projects
 						<IoIosReturnLeft />
 					</Link>
 				</div>

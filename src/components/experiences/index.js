@@ -6,7 +6,7 @@ export default function Experiences() {
 	return (
 		<div className="container experiences">
 			<h1>Carrer</h1>
-			<h2>All the way that I go until I get here.</h2>
+			<h2>All the way I went until I get here.</h2>
 			<Experience />
 			<div className="social-icons">
 				<a href="https://github.com/ViniciusmDias">

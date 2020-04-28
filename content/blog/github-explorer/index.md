@@ -7,9 +7,9 @@ imgUrl: "./github-explorer.png"
 live: "https://github-expo.netlify.app/"
 ---
 
-This is one of projects developed in [Go Stack](https://rocketseat.com.br/gostack), the Bootcamp of [Rocketseat](https://rocketseat.com.br).
+This is one of the projects developed in [Go Stack](https://rocketseat.com.br/gostack), the Bootcamp of [Rocketseat](https://rocketseat.com.br).
 
-In this project I create an application that makes a request for the github api and shows the searched repositories.
+In this project I create an application that makes a request for the Github API and shows the searched repositories.
 
 ## Requirements
 

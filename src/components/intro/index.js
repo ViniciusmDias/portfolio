@@ -22,8 +22,10 @@ export default function Intro() {
 				<div className="background" />
 				<div className="description">
 					<h3>
-						I have over 3 years experience developing websites and applications
-						with HTML, CSS, JS and React.
+						I am a Front-End developer with focus on performance and UX. I'm
+						always learning different things and I consider myself a very
+						curious guy. I feel that it keeps me motivated and creative to solve
+						problems.
 					</h3>
 					<Button title="projects" />
 				</div>
