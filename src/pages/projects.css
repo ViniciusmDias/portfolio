@@ -30,6 +30,10 @@
 	background-image: linear-gradient(to bottom, #fff 10%, #ffc799);
 	border-radius: 0.125rem;
 }
+.works section article .image .gatsby-image-wrapper {
+	max-width: 200px;
+	max-height: 200px;
+}
 .works section article a:hover .image {
 	box-shadow: 0 18px 35px rgba(90, 50, 50, 0.1),
 		0 9px 18px -5px rgba(0, 0, 0, 0.3);

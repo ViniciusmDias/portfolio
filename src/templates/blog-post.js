@@ -29,7 +29,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 					<h4> {post.frontmatter.date}</h4>
 				</div>
 				<section dangerouslySetInnerHTML={{ __html: post.html }} />
-				<a className="button" href="https://covidbreakingnews.netlify.app/">
+				<a className="button" href={post.frontmatter.live}>
 					Acessar site
 					<FaArrowRight />
 				</a>
@@ -87,17 +87,11 @@ export const pageQuery = graphql`
 			excerpt(pruneLength: 160)
 			html
 			frontmatter {
-				img {
-					childImageSharp {
-						fixed {
-							...GatsbyImageSharpFixed
-						}
-					}
-				}
 				techs
 				title
 				date(formatString: "MMMM DD, YYYY")
 				description
+				live
 			}
 		}
 	}

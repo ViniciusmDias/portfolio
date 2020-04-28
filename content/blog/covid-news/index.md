@@ -4,13 +4,12 @@ date: "2020-04-15T22:12:03.284Z"
 description: "News website about the new Corona Virus."
 techs: "html, css"
 imgUrl: "../../../src/images/projects/covid-logo.png"
-img: "./covid-image.png"
+live: "https://covidbreakingnews.netlify.app/"
 ---
 
 This is my first project in [Gama Experience](https://gama.academy/experience/), the Bootcamp of GamaAcademy.
 
-In this project
-In this project we needed create a landing page using only HTML and CSS with 6 news about COVID-19.
+In this project I create a landing page using only HTML and CSS with 6 news about COVID-19.
 
 ## Requirements
 
