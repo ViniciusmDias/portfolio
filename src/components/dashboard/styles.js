@@ -41,6 +41,7 @@ export const Repositories = styled.div`
 		section {
 			display: flex;
 			flex-direction: column;
+			min-width: 250px;
 			margin: 0 1rem;
 			flex: 1;
 			justify-content: center;

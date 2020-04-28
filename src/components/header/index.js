@@ -97,10 +97,10 @@ export default function Header() {
 						<Link title="Go to homepage" to="/">
 							Home
 						</Link>
-						<Link title="Go to case studies page" to="/case">
+						<Link title="Go to case studies page" to="/projects">
 							Case Studies
 						</Link>
-						<Link title="Go to experience page" to="/experiences">
+						<Link title="Go to experience page" to="/carrer">
 							Experience
 						</Link>
 					</div>
