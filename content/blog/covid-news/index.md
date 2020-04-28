@@ -3,7 +3,7 @@ title: Covid News
 date: "2020-04-15T22:12:03.284Z"
 description: "News website about the new Corona Virus."
 techs: "html, css"
-imgUrl: "../../../src/images/projects/covid-logo.png"
+imgUrl: "./covid-logo.png"
 live: "https://covidbreakingnews.netlify.app/"
 ---
 

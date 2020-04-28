@@ -3,7 +3,7 @@ title: Github Explorer
 date: "2020-04-28T22:12:03.284Z"
 description: "Find repositories in Github."
 techs: "Reactjs, Typescript, Styled-components"
-imgUrl: "./logo.svg"
+imgUrl: "./github-explorer.png"
 live: "https://github-expo.netlify.app/"
 ---
 
