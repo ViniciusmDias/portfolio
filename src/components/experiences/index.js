@@ -5,7 +5,7 @@ import "./styles.css"
 export default function Experiences() {
 	return (
 		<div className="container experiences">
-			<h1>Experiences</h1>
+			<h1>Carrer</h1>
 			<h2>All the way that I go until I get here.</h2>
 			<Experience />
 			<div className="social-icons">

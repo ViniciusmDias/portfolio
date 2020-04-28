@@ -1,26 +1,26 @@
-.cases hr {
+.works hr {
 	display: none;
 }
-.cases h1 {
+.works h1 {
 	margin-bottom: 2vh;
 }
-.cases h2 {
+.works h2 {
 	margin-bottom: 8vh;
 }
-.cases section {
+.works section {
 	display: flex;
 	flex-direction: column;
 }
-.cases section article {
+.works section article {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 8vh;
 }
-.cases section article a {
+.works section article a {
 	transition: all 0.2s ease-out;
 }
 
-.cases section article .image {
+.works section article .image {
 	height: 128px;
 	transition: all 0.2s ease-out;
 	margin: 0;
@@ -30,32 +30,32 @@
 	background-image: linear-gradient(to bottom, #fff 10%, #ffc799);
 	border-radius: 0.125rem;
 }
-.cases section article a:hover .image {
+.works section article a:hover .image {
 	box-shadow: 0 18px 35px rgba(90, 50, 50, 0.1),
 		0 9px 18px -5px rgba(0, 0, 0, 0.3);
 	transform: translateY(-4px);
 }
-.cases section article .about {
+.works section article .about {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem 0;
 }
-.cases article .about {
+.works article .about {
 	padding: 1rem 0;
 }
-.cases article a:hover .about h3 {
+.works article a:hover .about h3 {
 	color: var(--orange);
 }
-.cases article small,
-.cases article p {
+.works article small,
+.works article p {
 	color: #999;
 	transition: all 0.2s ease-out;
 }
-.cases article a:hover small,
-.cases article a:hover p {
+.works article a:hover small,
+.works article a:hover p {
 	color: var(--near-black);
 }
-.cases article .about .techs span {
+.works article .about .techs span {
 	margin: 0 1vh 1vh 0;
 	font-size: 12px;
 	font-weight: 500;
@@ -67,15 +67,15 @@
 }
 
 @media (min-width: 550px) {
-	.cases section {
+	.works section {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	.cases section article {
+	.works section article {
 		width: 48%;
 	}
-	.cases section article .image {
+	.works section article .image {
 		height: 256px;
 	}
 }

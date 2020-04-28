@@ -1,13 +1,17 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import { rhythm } from "../utils/typography"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import Header from "../components/header"
 import Button from "../components/button"
+import Dashboard from "../components/dashboard"
+
 import Img from "gatsby-image"
-import "./case.css"
+
+import "./projects.css"
 
 const BlogIndex = ({ data }) => {
 	const posts = data.allMarkdownRemark.edges
@@ -16,9 +20,11 @@ const BlogIndex = ({ data }) => {
 		<Layout>
 			<SEO title="Projects" description="All projects in my carrer." />
 			<Header />
-			<div className="container cases">
+			<div className="container works">
 				<hr />
-				<h1>Case Studies</h1>
+				<h1>Projects</h1>
+
+				<Dashboard />
 				<h2>
 					Some projects that I have contributed in some way and I'm very proud
 					of.
@@ -65,7 +71,7 @@ const BlogIndex = ({ data }) => {
 					})}
 				</section>
 			</div>
-			<Button title="experiences" />
+			<Button title="carrer" />
 		</Layout>
 	)
 }

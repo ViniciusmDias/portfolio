@@ -25,7 +25,7 @@ export default function Intro() {
 						I have over 3 years experience developing websites and applications
 						with HTML, CSS, JS and React.
 					</h3>
-					<Button title="case studies" />
+					<Button title="projects" />
 				</div>
 			</div>
 		</>
