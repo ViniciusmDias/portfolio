@@ -23,6 +23,8 @@ export default function Header() {
 	const clickStyle = movClick ? "click" : ""
 
 	function handleClick() {
+		document.documentElement.style.overflow = movClick ? "initial" : "hidden"
+
 		setHamburguer(!hamburguer)
 		setMovClick(!movClick)
 	}
@@ -98,7 +100,7 @@ export default function Header() {
 							Home
 						</Link>
 						<Link title="Go to case studies page" to="/projects">
-							Case Studies
+							Projects
 						</Link>
 						<Link title="Go to experience page" to="/carrer">
 							Experience

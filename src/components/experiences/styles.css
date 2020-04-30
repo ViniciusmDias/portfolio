@@ -1,9 +1,20 @@
 .experiences {
+	animation: 600ms ease 600ms 1 normal forwards running fade;
 	display: flex;
 	flex-direction: column;
 	margin: 0px auto;
 	width: 100%;
 	background-color: var(--bg-color);
+	opacity: 0;
+}
+@keyframes fade {
+	0% {
+		transform: translateY(5%);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 .experiences h1 {
 	width: 100%;

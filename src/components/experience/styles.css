@@ -78,16 +78,8 @@
 	list-style-type: none;
 	color: #bfc1c3;
 	border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
-	cursor: pointer;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
-}
-.timeline ul li.active {
-	font-weight: bold;
-	color: #f94125;
-	border-bottom: 1px dotted transparent;
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
 }
 .timeline ul li:hover {
 	color: #000;

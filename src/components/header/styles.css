@@ -54,12 +54,6 @@ header .wrapper .icon {
 	border: none;
 	outline: none;
 }
-header .wrapper .icon.move {
-	pointer-events: all;
-	opacity: 1;
-	cursor: pointer;
-	transform: translate3d(0%, 0, 0);
-}
 header .wrapper .icon.click {
 	pointer-events: all;
 	opacity: 1 !important;
