@@ -24,12 +24,16 @@ const BlogIndex = ({ data }) => {
 				<hr />
 				<h1>Projects</h1>
 
-				<Dashboard />
 				<h2>
 					Some projects that I have contributed in some way and I'm very proud
 					of.
 				</h2>
-				<section>
+				<section
+					data-sal="slide-up"
+					data-sal-delay="200"
+					data-sal-easing="ease"
+					data-sal-duration="1000"
+				>
 					{posts.map(({ node }) => {
 						const title = node.frontmatter.title || node.fields.slug
 						return (
@@ -71,6 +75,8 @@ const BlogIndex = ({ data }) => {
 					})}
 				</section>
 			</div>
+
+			<Dashboard />
 			<Button title="carrer" />
 		</Layout>
 	)

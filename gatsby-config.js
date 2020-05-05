@@ -5,7 +5,7 @@ module.exports = {
 
 		author: {
 			name: `Vinicius Dias`,
-			summary: `who lives and works in Florianópois building useful things.`,
+			summary: `Who lives and works in Florianópois building useful things.`,
 		},
 		description: `A web-portfólio`,
 		siteUrl: `https://viniciusdias.works`,
@@ -120,6 +120,44 @@ module.exports = {
 				mergeCachingHeaders: true, // boolean to turn off the default caching headers
 				transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
 				generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+			},
+		},
+		{
+			resolve: `gatsby-plugin-scroll-reveal`,
+			options: {
+				threshold: 0.1, // Percentage of an element's area that needs to be visible to launch animation
+				once: true, // Defines if animation needs to be launched once
+				disable: false, // Flag for disabling animations
+
+				// Advanced Options
+				selector: "[data-sal]", // Selector of the elements to be animated
+				animateClassName: "sal-animate", // Class name which triggers animation
+				disabledClassName: "sal-disabled", // Class name which defines the disabled state
+				rootMargin: "0% 50%", // Corresponds to root's bounding box margin
+				enterEventName: "sal:in", // Enter event name
+				exitEventName: "sal:out", // Exit event name
+			},
+		},
+		"gatsby-plugin-page-transitions",
+		{
+			resolve: `gatsby-plugin-google-amp`,
+			options: {
+				analytics: {
+					type: "gtag",
+					dataCredentials: "include",
+					config: {
+						vars: {
+							gtag_id: `UA-141117092-13`,
+						},
+					},
+				},
+				canonicalBaseUrl: "http://viniciusdias.works/amp",
+				components: ["amp-form"],
+				excludedPaths: ["/404*", "/"],
+				pathIdentifier: "/amp/",
+				relAmpHtmlPattern:
+					"{{canonicalBaseUrl}}{{src/templates/blog-post.amp.js}}{{pathIdentifier}}",
+				useAmpClientIdApi: true,
 			},
 		},
 	],

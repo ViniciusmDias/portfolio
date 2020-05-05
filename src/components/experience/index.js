@@ -35,7 +35,13 @@ export default function Experience() {
 	const experiences = data.allMdx.edges
 
 	return (
-		<section className="content">
+		<section
+			className="content"
+			data-sal="slide-up"
+			data-sal-delay="200"
+			data-sal-easing="ease"
+			data-sal-duration="1000"
+		>
 			<div className="experience">
 				{experiences.map(experience => (
 					<div

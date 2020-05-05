@@ -5,7 +5,7 @@
 	margin-bottom: 2vh;
 }
 .works h2 {
-	margin-bottom: 8vh;
+	margin: 8vh 0 2vh;
 }
 .works section {
 	display: flex;
@@ -14,7 +14,7 @@
 .works section article {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 8vh;
+	margin: 2vh 0 8vh;
 }
 .works section article a {
 	transition: all 0.2s ease-out;

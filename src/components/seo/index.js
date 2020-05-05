@@ -33,6 +33,10 @@ const SEO = ({ title, description, image, pathname, article }) => (
 						<meta name="description" content={seo.description} />
 						<meta name="image" content={seo.image} />
 						<meta charSet="utf-8" />
+						<meta
+							name="viewport"
+							content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no"
+						/>
 						{seo.url && <meta property="og:url" content={seo.url} />}
 						{(article ? true : null) && (
 							<meta property="og:type" content="article" />
@@ -84,6 +88,7 @@ SEO.defaultProps = {
 	image: null,
 	pathname: null,
 	article: false,
+	lang: `en`,
 }
 const query = graphql`
 	query SEO {

@@ -28,13 +28,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 					<h2>{post.frontmatter.description}</h2>
 					<h4> {post.frontmatter.date}</h4>
 				</div>
-				<section
-					dangerouslySetInnerHTML={{ __html: post.html }}
-					data-sal="slide-up"
-					data-sal-delay="200"
-					data-sal-easing="ease"
-					data-sal-duration="1000"
-				/>
+				<section dangerouslySetInnerHTML={{ __html: post.html }} />
 				<a className="button" href={post.frontmatter.live}>
 					Acessar site
 					<FaArrowRight />
@@ -82,7 +76,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-	query BlogPostBySlug($slug: String!) {
+	query BlogPostAmpBySlug($slug: String!) {
 		site {
 			siteMetadata {
 				title
