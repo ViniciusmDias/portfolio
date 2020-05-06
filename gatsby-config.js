@@ -139,26 +139,5 @@ module.exports = {
 			},
 		},
 		"gatsby-plugin-page-transitions",
-		{
-			resolve: `gatsby-plugin-google-amp`,
-			options: {
-				analytics: {
-					type: "gtag",
-					dataCredentials: "include",
-					config: {
-						vars: {
-							gtag_id: `UA-141117092-13`,
-						},
-					},
-				},
-				canonicalBaseUrl: "http://viniciusdias.works/amp",
-				components: ["amp-form"],
-				excludedPaths: ["/404*", "/"],
-				pathIdentifier: "/amp/",
-				relAmpHtmlPattern:
-					"{{canonicalBaseUrl}}{{src/templates/blog-post.amp.js}}{{pathIdentifier}}",
-				useAmpClientIdApi: true,
-			},
-		},
 	],
 }
