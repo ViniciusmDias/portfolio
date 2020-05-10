@@ -1,7 +1,7 @@
 ---
 title: Airbnb Replicate
 date: "2020-05-10T22:12:03.284Z"
-description: "Similar airbnb bedrooms page"
+description: "Page similar to airbnb stays page"
 techs: "reactjs, typescript, styled-components"
 imgUrl: "./airbnb-logo.png"
 live: "https://viniciusdias-airbnb.netlify.app/"
@@ -20,4 +20,4 @@ Screen with cards containing:
 - Price
 
 Repository link on Github:
-[covidnews](https://github.com/ViniciusmDias/airbnb-gamaacademy).
+[airbnb-replicate](https://github.com/ViniciusmDias/airbnb-gamaacademy).
