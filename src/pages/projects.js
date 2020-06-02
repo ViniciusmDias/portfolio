@@ -28,12 +28,7 @@ const BlogIndex = ({ data }) => {
 					Some projects that I have contributed in some way and I'm very proud
 					of.
 				</h2>
-				<section
-					data-sal="slide-up"
-					data-sal-delay="200"
-					data-sal-easing="ease"
-					data-sal-duration="1000"
-				>
+				<section>
 					{posts.map(({ node }) => {
 						const title = node.frontmatter.title || node.fields.slug
 						return (
@@ -45,7 +40,7 @@ const BlogIndex = ({ data }) => {
 								>
 									<div className="image">
 										<Img
-											fixed={node.frontmatter.imgUrl.childImageSharp.fixed}
+											fluid={node.frontmatter.imgUrl.childImageSharp.fluid}
 											alt={`logo of ${node.frontmatter.title}`}
 										/>
 									</div>
@@ -105,8 +100,8 @@ export const pageQuery = graphql`
 						techs
 						imgUrl {
 							childImageSharp {
-								fixed {
-									...GatsbyImageSharpFixed
+								fluid {
+									...GatsbyImageSharpFluid
 								}
 							}
 						}

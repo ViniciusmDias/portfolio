@@ -18,8 +18,8 @@ export default function Project() {
 							live
 							imgUrl {
 								childImageSharp {
-									fixed {
-										src
+									fluid {
+										...GatsbyImageSharpFluid
 									}
 								}
 							}
@@ -38,8 +38,8 @@ export default function Project() {
 			{projects.map(project => (
 				<div key={generateKey(project.node.frontmatter.title)} className="item">
 					<div className="image-item">
-						<img
-							src={project.node.frontmatter.imgUrl.childImageSharp.fixed.src}
+						<Img
+							fluid={project.node.frontmatter.imgUrl.childImageSharp.fluid}
 							alt="Project image"
 						/>
 					</div>
