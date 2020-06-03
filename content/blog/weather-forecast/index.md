@@ -19,7 +19,7 @@ live: "https://viniciusdias-weatherforecast.netlify.app/"
     <img src="https://img.shields.io/badge/react-16.12.0-informational?logo=react"></img>
   </a>
   <a aria-label="Typescript version" href="https://www.npmjs.com/package/typescript/v/3.7.2">
-    <img src="https://img.shields.io/badge/typescript-3.7.2-blue-informational?logo=typescript"></img>
+    <img src="https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/"></img>
   </a>
 </p>
 
@@ -41,7 +41,7 @@ live: "https://viniciusdias-weatherforecast.netlify.app/"
   yarn start
 ```
 
-### :sparkles: Tech Introduction
+### Tech Introduction
 
 - Developed using Typescript standards within React (create-react-app);
 - The EsLint and Prettier libraries were used for identification and a better debugging of the code;
