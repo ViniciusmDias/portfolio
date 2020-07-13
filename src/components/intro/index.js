@@ -18,7 +18,7 @@ export default function Intro() {
 				]}
 			/>
 			<div className="container intro">
-				<h1>I'm a developer of sites and aplications.</h1>
+				<h1>I'm a very curious guy.</h1>
 				<div className="background" />
 				<div className="description">
 					<h3>
