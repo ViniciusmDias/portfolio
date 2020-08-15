@@ -10,7 +10,8 @@
 	position: absolute;
 	width: 85%;
 	height: 70%;
-	background-position: center;
+	max-height: 360px;
+	background-position: bottom;
 	background-size: cover;
 	background-image: linear-gradient(to bottom, #fff 10%, #fd7e1512),
 		url("../../images/vinidois.jpg");
@@ -40,22 +41,19 @@
 .intro .description {
 	display: flex;
 	flex-direction: column;
-	align-self: flex-end;
+	align-self: center;
+	margin-top: 30vh;
 }
 .intro h3 {
 	font-weight: 400;
 	letter-spacing: 0px;
-	margin-top: 55vh;
 }
 @media (min-width: 970px) {
 	.intro {
 		flex-wrap: wrap;
 		flex-direction: row;
-
 		justify-content: space-between;
-
 		align-items: flex-start;
-
 		margin-bottom: 5vh;
 	}
 
@@ -67,21 +65,17 @@
 		max-height: 600px;
 	}
 	.intro .description {
-		width: 40%;
-		margin-bottom: 10vh;
+		width: 45%;
+		margin-top: 10vh;
+		align-self: flex-end;
 	}
 	.intro h1 {
 		font-size: 3rem;
 		text-align: left;
 		line-height: 55px;
 		align-self: center;
-		margin: 15vh 10vw;
+		margin: 7vh 10vw;
 		position: absolute;
 		top: 0;
-	}
-
-	.intro h3 {
-		align-self: flex-end;
-		margin-top: 20vh;
 	}
 }

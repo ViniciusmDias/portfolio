@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { FiChevronRight } from "react-icons/fi"
-import api from "../../services/api"
+import { api } from "../../services/api"
 
 import { Title, Repositories } from "./styles"
 

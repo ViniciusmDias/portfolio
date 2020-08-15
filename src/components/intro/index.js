@@ -2,8 +2,11 @@ import React from "react"
 import "./styles.css"
 import Button from "../button"
 import { SocialProfileJsonLd } from "gatsby-plugin-next-seo"
+import Post from "../posts"
 
 export default function Intro() {
+
+
 	return (
 		<>
 			<SocialProfileJsonLd
@@ -21,12 +24,7 @@ export default function Intro() {
 				<h1>I'm a very curious guy.</h1>
 				<div className="background" />
 				<div className="description">
-					<h3>
-						I am a Front-End developer with focus on performance and UX. I'm
-						always learning different things and I consider myself a very
-						curious guy. I feel that it keeps me motivated and creative to solve
-						problems.
-					</h3>
+					<Post />
 					<Button title="projects" />
 				</div>
 			</div>

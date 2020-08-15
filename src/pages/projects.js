@@ -28,6 +28,8 @@ const BlogIndex = ({ data }) => {
 					Some projects that I have contributed in some way and I'm very proud
 					of.
 				</h2>
+
+				<Dashboard />
 				<section>
 					{posts.map(({ node }) => {
 						const title = node.frontmatter.title || node.fields.slug
@@ -71,7 +73,6 @@ const BlogIndex = ({ data }) => {
 				</section>
 			</div>
 
-			<Dashboard />
 			<Button title="carrer" />
 		</Layout>
 	)
