@@ -47,6 +47,9 @@ export const Posts = styled.div`
 			color: #999;
 			margin-top: 4px;
 		}
+		span {
+				font-size: 0.7rem;
+			}
 		section {
 			display: flex;
 			flex-direction: column;
