@@ -27,7 +27,7 @@ const Post = () => {
 
 	return (
 		<>
-			<Title>Last posts</Title>
+			<Title>Lastest posts</Title>
 			<Posts>
 				{posts.map(post => (
 					<a key={post.id} href={`${post.url}`}>

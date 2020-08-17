@@ -42,6 +42,7 @@ export const Posts = styled.div`
 			height: 4rem;
 			border-radius: 50%;
 		}
+
 		p {
 			font-size: 0.7rem;
 			color: #999;
