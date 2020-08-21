@@ -66,7 +66,7 @@
 	}
 	.intro .description {
 		width: 45%;
-		margin-top: 10vh;
+		margin-top: 12vh;
 		align-self: flex-end;
 	}
 	.intro h1 {
@@ -77,5 +77,6 @@
 		margin: 7vh 10vw;
 		position: absolute;
 		top: 0;
+		-webkit-margin-before: 180px !important;
 	}
 }
