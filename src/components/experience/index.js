@@ -1,7 +1,7 @@
 import React from "react"
 import "./styles.css"
 
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 export default function Experience() {
 	const data = useStaticQuery(graphql`
 		query experienceQuery {
@@ -16,13 +16,7 @@ export default function Experience() {
 							title
 							year
 							categories
-							imgUrl {
-								childImageSharp {
-									fixed {
-										...GatsbyImageSharpFixed
-									}
-								}
-							}
+							url
 						}
 					}
 				}
@@ -50,7 +44,9 @@ export default function Experience() {
 					>
 						<div className="info-item">
 							<div className="title">
-								<h3>{experience.node.frontmatter.title}</h3>
+								<a href={experience.node.frontmatter.url}>
+									{experience.node.frontmatter.title}
+								</a>
 							</div>
 							<p className="description">
 								{experience.node.frontmatter.description}

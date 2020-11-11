@@ -60,9 +60,9 @@ export default function Header() {
 							</Link>
 						</li>
 						<li>
-							<a title="Go to resume page" href="https://pdfhost.io/v/msVERCoH8_ResumeENpdf.pdf">
+							<Link title="Go to resume page" to="/resume">
 								Resume
-							</a>
+							</Link>
 						</li>
 					</ul>
 					<div className="social-icons">
@@ -110,7 +110,10 @@ export default function Header() {
 						<Link title="Go to experience page" to="/carrer">
 							Experience
 						</Link>
-						<a title="Go to resume page" href="https://pdfhost.io/v/msVERCoH8_ResumeENpdf.pdf">
+						<a
+							title="Go to resume page"
+							href="https://pdfhost.io/v/msVERCoH8_ResumeENpdf.pdf"
+						>
 							Resume
 						</a>
 					</div>

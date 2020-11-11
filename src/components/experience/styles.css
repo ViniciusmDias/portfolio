@@ -31,10 +31,33 @@
 	flex-flow: column wrap;
 	margin-bottom: 12px;
 }
-.experience .info-item .title h3 {
-	font-weight: 700;
-	line-height: 44px;
-	color: #292f35;
+.experience .info-item .title a {
+	display: flex;
+	align-items: center;
+	color: var(--gray);
+	font-size: 1rem;
+	position: relative;
+	margin-right: 1rem;
+	height: 44px;
+	outline: none;
+	transition: opacity 0.2s ease-in-out;
+	box-shadow: 0 1px 0 0 currentColor;
+}
+.experience .info-item .title a:hover {
+	opacity: 0.7;
+}
+.experience .info-item .title a::after {
+	content: "";
+	position: absolute;
+	bottom: 0.3rem;
+	left: 0;
+	width: 0;
+	height: 0.15rem;
+	background-color: var(--orange-light);
+	transition: width 0.2s;
+}
+.experience .info-item .title a::after:hover {
+	width: 1.6rem;
 }
 .experience .info-item .category {
 	display: flex;
