@@ -64,11 +64,11 @@ export default function Header() {
 								Resume
 							</Link>
 						</li>
-						<li>
+						{/* <li>
 							<Link title="Go to contact page" to="/contact">
 								Contact
 							</Link>
-						</li>
+						</li> */}
 					</ul>
 					<div className="social-icons">
 						<a

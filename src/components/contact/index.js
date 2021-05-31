@@ -6,34 +6,84 @@ export default function Resume() {
 		<div className="container contact">
 			<h1>Contact</h1>
 
-			<form name="contact" method="POST" data-netlify="true">
-				<p>
+			<form
+				id="form"
+				name="contact"
+				method="post"
+				data-netlify="true"
+				data-netlify-honeypot="bot-field"
+			>
+				<input type="hidden" name="form-name" value="contact" />
+
+				<div hidden>
 					<label>
-						Your Name: <input type="text" name="name" />
+						Don’t fill this out: <input name="bot-field" />
 					</label>
-				</p>
-				<p>
+				</div>
+				<h3
+					className="contact-info"
+					data-sal="slide-up"
+					data-sal-delay="200"
+					data-sal-easing="ease"
+					data-sal-duration="1000"
+				>
+					Envie-nos uma mensagem.
+				</h3>
+				<div className="row">
 					<label>
-						Your Email: <input type="email" name="email" />
+						Endereço de e-mail (obrigatório)
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Coloque seu e-mail"
+							required
+						/>
 					</label>
-				</p>
-				<p>
 					<label>
-						Your Role:{" "}
-						<select name="role[]" multiple>
-							<option value="leader">Leader</option>
-							<option value="follower">Follower</option>
-						</select>
+						Seu Nome (obrigatório)
+						<input
+							type="text"
+							name="name"
+							placeholder="Coloque seu nome"
+							id="name"
+							required
+						/>
 					</label>
-				</p>
-				<p>
+				</div>
+				<div className="row">
 					<label>
-						Message: <textarea name="message"></textarea>
+						Tecnologias (opcional)
+						<input
+							type="techs"
+							name="techs"
+							id="techs"
+							placeholder="Digite aqui as tecnologias"
+						/>
 					</label>
-				</p>
-				<p>
-					<button type="submit">Send</button>
-				</p>
+					<label>
+						Telefone (opcional)
+						<input
+							type="text"
+							name="phone"
+							id="phone"
+							placeholder="Digite seu telefone"
+						/>
+					</label>
+				</div>
+				<div className="row">
+					<label>
+						Mensagem (obrigatório)
+						<textarea
+							name="message"
+							id="message"
+							rows="5"
+							placeholder="Coloque aqui a sua necessidade"
+						/>
+					</label>
+				</div>
+
+				<button type="submit">Enviar</button>
 			</form>
 
 			<div className="social-icons">
